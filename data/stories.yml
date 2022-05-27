@@ -1,0 +1,846 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: about us path
+  steps:
+  - intent: about_us
+  - action: utter_about_us
+  
+- story: parking path
+  steps:
+  - intent: parking
+  - action: utter_parking
+
+- story: affiliate path
+  steps:
+  - intent: affiliate
+  - action: utter_affiliate
+
+- story: facilities path
+  steps:
+  - intent: facilities
+  - action: utter_facilities  
+
+- story: fees path
+  steps:
+  - intent: fees
+  - action: utter_fees
+
+- story: hostel path
+  steps:
+  - intent: hostel
+  - action: utter_hostel
+
+- story: mission path
+  steps:
+  - intent: mission
+  - action: utter_mission
+
+- story: placement path
+  steps:
+  - intent: placement
+  - action: utter_placement
+
+- story: address path
+  steps:
+  - intent: address
+  - action: utter_address
+  
+- story: total_branches path
+  steps:
+  - intent: total_branches
+  - action: utter_total_branches
+
+- story: vision path
+  steps:
+  - intent: vision
+  - action: utter_vision
+
+- story: entrance path
+  steps:
+  - intent: entrance
+  - action: utter_entrance
+
+- story: statistics path
+  steps:
+  - intent: dept_statistics
+  - action: utter_dept_statistics
+
+- story: statistics path1
+  steps:
+  - intent: courses_statistics
+  - action: utter_courses_statistics
+
+- story: zoology path
+  steps:
+  - intent: dept_zoology
+  - action: utter_dept_zoology
+
+- story: zoology path1
+  steps:
+  - intent: courses_zoology
+  - action: utter_courses_zoology
+
+- story: computer science path
+  steps:
+  - intent: dept_computer_science
+  - action: utter_dept_computer_science
+
+- story: computer science path1
+  steps:
+  - intent: courses_computer_science
+  - action: utter_courses_computer_science
+    
+- story: physics path
+  steps:
+  - intent: dept_physics
+  - action: utter_dept_physics
+
+- story: physics path1
+  steps:
+  - intent: courses_physics
+  - action: utter_courses_physics  
+    
+- story: microbiology path
+  steps:
+  - intent: dept_microbiology
+  - action: utter_dept_microbiology
+
+- story: microbiology path1
+  steps:
+  - intent: courses_microbiology
+  - action: utter_courses_microbiology
+
+- story: mathematics path
+  steps:
+  - intent: dept_mathematics
+  - action: utter_dept_mathematics
+
+- story: mathematics path1
+  steps:
+  - intent: courses_mathematics
+  - action: utter_courses_mathematics
+
+- story: electronic_science path
+  steps:
+  - intent: dept_electronic_science
+  - action: utter_dept_electronic_science
+
+- story: electronic_science path1
+  steps:
+  - intent: courses_electronic_science
+  - action: utter_courses_electronic_science
+
+- story: chemistry path
+  steps:
+  - intent: dept_chemistry
+  - action: utter_dept_chemistry
+
+- story: chemistry path1
+  steps:
+  - intent: courses_chemistry
+  - action: utter_courses_chemistry
+
+- story: botany path
+  steps:
+  - intent: dept_botany
+  - action: utter_dept_botany
+
+- story: botany path1
+  steps:
+  - intent: courses_botany
+  - action: utter_courses_botany
+
+- story: biotechnology path
+  steps:
+  - intent: dept_biotechnology
+  - action: utter_dept_biotechnology
+
+- story: biotechnology path1
+  steps:
+  - intent: courses_biotechnology
+  - action: utter_courses_biotechnology
+
+- story: english path
+  steps:
+  - intent: dept_english
+  - action: utter_dept_english
+
+- story: english path1
+  steps:
+  - intent: courses_english
+  - action: utter_courses_english
+
+- story: german path
+  steps:
+  - intent: dept_german
+  - action: utter_dept_german
+
+- story: german path1
+  steps:
+  - intent: courses_german
+  - action: utter_courses_german
+
+- story: psychology path
+  steps:
+  - intent: dept_psychology
+  - action: utter_dept_psychology
+
+- story: psychology path1
+  steps:
+  - intent: courses_psychology
+  - action: utter_courses_psychology
+
+- story: hindi path
+  steps:
+  - intent: dept_hindi
+  - action: utter_dept_hindi
+
+- story: hindi path1
+  steps:
+  - intent: courses_hindi
+  - action: utter_courses_hindi
+
+- story: history path
+  steps:
+  - intent: dept_history
+  - action: utter_dept_history
+
+- story: history path1
+  steps:
+  - intent: courses_history
+  - action: utter_courses_history
+
+- story: fashion_technology path
+  steps:
+  - intent: dept_fashion_technology
+  - action: utter_dept_fashion_technology
+
+- story: fashion_technology path1
+  steps:
+  - intent: courses_fashion_technology
+  - action: utter_courses_fashion_technology
+
+- story: marathi path
+  steps:
+  - intent: dept_marathi
+  - action: utter_dept_marathi
+
+- story: marathi path1
+  steps:
+  - intent: courses_marathi
+  - action: utter_courses_marathi  
+
+- story: geography path
+  steps:
+  - intent: dept_geography
+  - action: utter_dept_geography
+
+- story: geography path1
+  steps:
+  - intent: courses_geography
+  - action: utter_courses_geography
+
+- story: political science path
+  steps:
+  - intent: dept_political_science
+  - action: utter_dept_political_science
+
+- story: political science path1
+  steps:
+  - intent: courses_political_science
+  - action: utter_courses_political_science
+
+- story: commerce_self path
+  steps:
+  - intent: dept_commerce_self
+  - action: utter_dept_commerce_self
+
+- story: commerce_self path1
+  steps:
+  - intent: courses_commerce_self
+  - action: utter_courses_commerce_self
+
+- story: commerce_grant path
+  steps:
+  - intent: dept_commerce_grant
+  - action: utter_dept_commerce_grant
+
+- story: commerce_grant path1
+  steps:
+  - intent: courses_commerce_grant
+  - action: utter_courses_commerce_grant
+
+- story: economics path
+  steps:
+  - intent: dept_economics
+  - action: utter_dept_economics
+
+- story: economics path1
+  steps:
+  - intent: courses_economics
+  - action: utter_courses_economics
+
+- story: animation path
+  steps:
+  - intent: dept_animation
+  - action: utter_dept_animation
+
+- story: animation path1
+  steps:
+  - intent: courses_animation
+  - action: utter_courses_animation  
+
+- story: hod path
+  steps:
+  - intent: HOD
+  - action: utter_HOD
+
+- story: principals_desk path
+  steps:
+  - intent: principals_desk
+  - action: utter_principals_desk
+
+- story: student_welfare path
+  steps:
+  - intent: student_welfare
+  - action: utter_student_welfare
+
+- story: branch_art path
+  steps:
+  - intent: branch_art
+  - action: utter_branch_art
+
+- story: branch_science path
+  steps:
+  - intent: branch_science
+  - action: utter_branch_science
+
+- story: branch_commerce path
+  steps:
+  - intent: branch_commerce
+  - action: utter_branch_commerce
+
+- story: admission_form path
+  steps:
+  - intent: admission_form
+  - action: utter_admission_form  
+
+- story: id_card path
+  steps:
+  - intent: id_card
+  - action: utter_id_card
+  
+- story: library path
+  steps:
+  - intent: library
+  - action: utter_library
+  
+- story: sports path
+  steps:
+  - intent: sports
+  - action: utter_sports
+  
+- story: ragging cell path
+  steps:
+  - intent: ragging_cell
+  - action: utter_ragging_cell
+  
+- story: ug_admission path
+  steps:
+  - intent: ug_admission
+  - action: utter_ug_admission 
+  
+- story: new_ug_student
+  steps: 
+   - intent: new_ug_student
+   - action: utter_new_ug_student  
+ 
+- story: new_ug_queries_adm
+  steps: 
+  - intent: new_ug_queries_adm
+  - action: utter_new_ug_queries_adm
+ 
+- story: new_ug_guidance_adm
+  steps:
+  - intent: new_ug_guidance_adm
+  - action: utter_new_ug_guidance_adm
+  
+- story: new_ug_link_adm
+  steps:
+  - intent: new_ug_link_adm
+  - action: utter_new_ug_link_adm
+           
+- story: new_ug_adm_cancle
+  steps:
+  - intent: new_ug_adm_cancle
+  - action: utter_new_ug_adm_cancle
+     
+- story: existing_ug_student
+  steps: 
+   - intent: existing_ug_student
+   - action: utter_existing_ug_student   
+   
+- story: pg_admission path
+  steps:
+  - intent: pg_admission
+  - action: utter_pg_admission 
+  
+- story: new_pg_student
+  steps: 
+   - intent: new_pg_student
+   - action: utter_new_pg_student  
+   
+- story: entrance_guide
+  steps: 
+   - intent: entrance_guide
+   - action: utter_entrance_guide
+
+- story: entrance_pg_query
+  steps: 
+   - intent: entrance_pg_query
+   - action: utter_entrance_pg_query 
+
+- story: entrance_pg_link
+  steps: 
+   - intent: entrance_pg_link
+   - action: utter_entrance_pg_link
+
+- story: entrance_pg_date
+  steps: 
+   - intent: entrance_pg_date
+   - action: utter_entrance_pg_date
+      
+- story: existing_pg_student
+  steps: 
+   - intent: existing_pg_student
+   - action: utter_existing_pg_student    
+    
+- story: link_for_admission 
+  steps:
+  - intent: link_for_admission
+  - action: utter_link_for_admission
+  
+- story: admission_form_guide_pg
+  steps:
+  - intent: admission_form_guide_pg
+  - action: utter_admission_form_guide_pg
+  
+- story: req_doc_pg
+  steps:
+  - intent: req_doc_pg
+  - action: utter_req_doc_pg
+
+- story: eligibility_pg
+  steps:
+  - intent: eligibility_pg
+  - action: utter_eligibility_pg  
+  
+- story: steps_pg_admission
+  steps:
+  - intent: steps_pg_admission
+  - action: utter_steps_pg_admission
+  
+- story: admission_form_query_pg
+  steps:
+  - intent: admission_form_query_pg
+  - action: utter_admission_form_query_pg 
+
+- story: late_admission_pg
+  steps:
+  - intent: late_admission_pg
+  - action: utter_late_admission_pg
+  
+- story: admission_form_guide_ug
+  steps:
+  - intent: admission_form_guide_ug
+  - action: utter_admission_form_guide_ug
+  
+- story: req_doc_ug
+  steps:
+  - intent: req_doc_ug
+  - action: utter_req_doc_ug
+  
+- story: eligibility_ug
+  steps:
+  - intent: eligibility_ug
+  - action: utter_eligibility_ug
+ 
+- story: steps_ug_admission
+  steps:
+  - intent: steps_ug_admission
+  - action: utter_steps_ug_admission
+  
+- story: admission_form_query_ug
+  steps:
+  - intent: admission_form_query_ug
+  - action: utter_admission_form_query_ug  
+  
+- story: late_admission_ug
+  steps:
+  - intent: late_admission_ug
+  - action: utter_late_admission_ug  
+
+- story: website_stuck
+  steps:
+  - intent: website_stuck
+  - action: utter_website_stuck 
+  
+- story: doc_not_available
+  steps:
+  - intent: doc_not_available
+  - action: utter_doc_not_available
+  
+- story: ps_not_uploaded
+  steps:
+  - intent: ps_not_uploaded
+  - action: utter_ps_not_uploaded 
+  
+- story: last_date_of_admission
+  steps:
+  - intent: last_date_of_admission
+  - action: utter_last_date_of_admission  
+ 
+-  story: examination
+   steps: 
+   - intent: examination
+   - action: utter_examination
+   
+-  story: ug_exam
+   steps: 
+   - intent: ug_exam
+   - action: utter_ug_exam
+
+- story: exam_form_guide_ug
+  steps:
+   - intent: exam_form_guide_ug
+   - action: utter_exam_form_guide_ug
+   
+-  story: exam_form_query_ug
+   steps: 
+   - intent: exam_form_query_ug
+   - action: utter_exam_form_query_ug
+
+-  story: steps_exam_form
+   steps: 
+   - intent: steps_exam_form
+   - action: utter_steps_exam_form
+   
+-  story: pg_exam
+   steps: 
+   - intent: pg_exam
+   - action: utter_pg_exam  
+    
+- story: exam_form_guide_pg
+  steps:
+   - intent: exam_form_guide_pg
+   - action: utter_exam_form_guide_pg
+   
+-  story: exam_form_query_pg
+   steps: 
+   - intent: exam_form_query_pg
+   - action: utter_exam_form_query_pg
+   
+-  story: link_for_exam_form
+   steps:
+   - intent: link_for_exam_form
+   - action: utter_link_for_exam_form
+   
+-  story: delete_exam_form
+   steps: 
+   - intent: delete_exam_form
+   - action: utter_delete_exam_form
+   
+-  story: reapply_exam_form
+   steps: 
+   - intent: reapply_exam_form
+   - action: utter_reapply_exam_form
+
+- story: ms_teams_path
+  steps:
+  - intent: ms_teams
+  - action: utter_ms_teams
+  
+- story: ms_teams_login_path
+  steps:
+  - intent: ms_teams_login
+  - action: utter_ms_teams_login
+  
+- story: ms_teams_appear_for_exam
+  steps: 
+  - intent: ms_teams_appear_for_exam
+  - action: utter_ms_teams_appear_for_exam
+ 
+- story: scholarship_info
+  steps:
+   - intent: scholarship_info
+   - action: utter_scholarship_info
+
+- story: sch_government
+  steps: 
+  - intent: sch_government
+  - action: utter_sch_government
+
+- story: sch_private
+  steps:
+  - intent: sch_private
+  - action: utter_sch_private
+  
+- story: sch_govern_general
+  steps:
+  - intent: sch_govern_general
+  - action: utter_sch_govern_general
+  
+- story: sch_govern_obc
+  steps:
+  - intent: sch_govern_obc
+  - action: utter_sch_govern_obc
+  
+- story: sch_govern_sbc
+  steps:
+  - intent: sch_govern_sbc
+  - action: utter_sch_govern_sbc
+  
+- story: sch_govern_sc
+  steps:
+  - intent: sch_govern_sc
+  - action: utter_sch_govern_sc
+  
+- story: sch_govern_st
+  steps:
+  - intent: sch_govern_st
+  - action: utter_sch_govern_st
+  
+- story: sch_govern_vjnt
+  steps:
+  - intent: sch_govern_vjnt
+  - action: utter_sch_govern_vjnt
+
+- story: sch_govern_general_I_less_1lac 
+  steps:
+  - intent: sch_govern_general_I_less_1lac
+  - action: utter_sch_govern_general_I_less_1lac
+  
+- story: sch_govern_general_Rajashri_shahu
+  steps:
+  - intent: sch_govern_general_Rajashri_shahu
+  - action: utter_sch_govern_general_Rajashri_shahu
+
+- story: sch_govern_general_I_more_1lac
+  steps: 
+  - intent: sch_govern_general_I_more_1lac
+  - action: utter_sch_govern_general_I_more_1lac
+ 
+- story: sch_govern_general_Dr_Punjabrao 
+  steps: 
+  - intent: sch_govern_general_Dr_Punjabrao 
+  - action: utter_sch_govern_general_Dr_Punjabrao 
+  
+- story: sch_govern_obc_I_less_1.5lac
+  steps: 
+  - intent: sch_govern_obc_I_less_1.5lac
+  - action: utter_sch_govern_obc_I_less_1.5lac
+  
+- story: sch_govern_obc_post_metric
+  steps: 
+  - intent: sch_govern_obc_post_metric
+  - action: utter_sch_govern_obc_post_metric
+ 
+- story: sch_govern_obc_8lac_more_I_more_1.5lac
+  steps:
+  - intent: sch_govern_obc_8lac_more_I_more_1.5lac
+  - action: utter_sch_govern_obc_8lac_more_I_more_1.5lac
+   
+- story: sch_govern_obc_tution_fee
+  steps:
+  - intent: sch_govern_obc_tution_fee
+  - action: utter_sch_govern_obc_tution_fee
+  
+- story: sch_govern_sbc_I_less_1.5lac
+  steps:
+  - intent: sch_govern_sbc_I_less_1.5lac
+  - action: utter_sch_govern_sbc_I_less_1.5lac
+ 
+- story: sch_govern_sbc_post_metric
+  steps:
+  - intent: sch_govern_sbc_post_metric
+  - action: utter_sch_govern_sbc_post_metric
+ 
+- story: sch_govern_sbc_8lac_more_I_more_1.5lac
+  steps:
+  - intent: sch_govern_sbc_8lac_more_I_more_1.5lac
+  - action: utter_sch_govern_sbc_8lac_more_I_more_1.5lac
+ 
+- story: sch_govern_sbc_tution_fee
+  steps:
+  - intent: sch_govern_sbc_tution_fee
+  - action: utter_sch_govern_sbc_tution_fee
+ 
+- story: sch_govern_sc_I_less_2.5lac
+  steps:
+  - intent: sch_govern_sc_I_less_2.5lac
+  - action: utter_sch_govern_sc_I_less_2.5lac
+  
+- story: sch_govern_sc_post_metric
+  steps:
+  - intent: sch_govern_sc_post_metric
+  - action: utter_sch_govern_sc_post_metric
+
+- story: sch_govern_sc_I_more_2.5lac
+  steps:
+  - intent: sch_govern_sc_I_more_2.5lac
+  - action: utter_sch_govern_sc_I_more_2.5lac
+  
+- story: sch_govern_sc_tution_fee
+  steps:
+  - intent: sch_govern_sc_tution_fee
+  - action: utter_sch_govern_sc_tution_fee
+ 
+- story: sch_govern_st_I_less_2.5lac
+  steps:
+  - intent: sch_govern_st_I_less_2.5lac
+  - action: utter_sch_govern_st_I_less_2.5lac
+  
+- story: sch_govern_st_post_metric
+  steps:
+  - intent: sch_govern_st_post_metric
+  - action: utter_sch_govern_st_post_metric
+  
+- story: sch_govern_st_I_more_2.5lac
+  steps:
+  - intent: sch_govern_st_I_more_2.5lac
+  - action: utter_sch_govern_st_I_more_2.5lac
+  
+- story: sch_govern_st_tution_fee
+  steps: 
+  - intent: sch_govern_st_tution_fee
+  - action: utter_sch_govern_st_tution_fee
+  
+- story: sch_govern_vjnt_I_less_1.5lac
+  steps:
+  - intent: sch_govern_vjnt_I_less_1.5lac
+  - action: utter_sch_govern_vjnt_I_less_1.5lac
+
+- story: sch_govern_vjnt_post_metric
+  steps:
+  - intent: sch_govern_vjnt_post_metric
+  - action: utter_sch_govern_vjnt_post_metric
+  
+- story: sch_govern_vjnt_8lac_more_I_more_1.5lac
+  steps:
+  - intent: sch_govern_vjnt_8lac_more_I_more_1.5lac
+  - action: utter_sch_govern_vjnt_8lac_more_I_more_1.5lac
+ 
+- story: sch_govern_vjnt_tution_fee
+  steps:
+  - intent: sch_govern_vjnt_tution_fee
+  - action: utter_sch_govern_vjnt_tution_fee
+  
+- story: sch_pri_Cytel_I<1lakh
+  steps:
+  - intent: sch_pri_Cytel_I<1lakh
+  - action: utter_sch_pri_Cytel_I<1lakh
+  
+- story: sch_pri_emcure_pharmaceuticals_I<3lakh
+  steps:
+  - intent: sch_pri_emcure_pharmaceuticals_I<3lakh
+  - action: utter_sch_pri_emcure_pharmaceuticals_I<3lakh
+ 
+- story: sch_pri_geeta_israni_I<4lakh
+  steps:
+  - intent: sch_pri_geeta_israni_I<4lakh
+  - action: utter_sch_pri_geeta_israni_I<4lakh
+  
+- story: sch_pri_ashutosh_karandikar_I<5lakh
+  steps:
+  - intent: sch_pri_ashutosh_karandikar_I<5lakh
+  - action: utter_sch_pri_ashutosh_karandikar_I<5lakh
+  
+- story: process_for_tc_lc
+  steps:
+  - intent: process_for_tc_lc
+  - action: utter_process_for_tc_lc
+
+- story: awards_path
+  steps:
+  - intent: awards
+  - action: utter_awards
+   
+- story: adm_junior
+  steps:
+  - intent: adm_junior
+  - action: utter_adm_junior
+
+- story: adm_junior_11
+  steps:
+  - intent: adm_junior_11
+  - action: utter_adm_junior_11
+
+- story: junior_11_notice
+  steps:
+  - intent: junior_11_notice
+  - action: utter_junior_11_notice
+
+- story: junior_11_dou_req
+  steps:
+  - intent: junior_11_dou_req
+  - action: utter_junior_11_dou_req
+
+- story: adm_junior_12
+  steps:
+  - intent: adm_junior_12
+  - action: utter_adm_junior_12
+
+- story: steps_adm_12
+  steps:
+  - intent: steps_adm_12 
+  - action: utter_steps_adm_12
+
+
+
+    
+
+
+  
+  
+  
+     
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  

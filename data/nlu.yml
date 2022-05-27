@@ -1,0 +1,1021 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: about_us
+  examples: |
+    - info about modern college
+    - info about modern
+    - information about modern college
+    - information
+    - about us
+- intent: parking
+  examples: |
+    - parking for students
+    - do you have parking facility available at our college
+    - do youhave parking facility available at our paid college
+    - do you have parking facility available at our free college
+    - do you have parking facility available at our modern college
+- intent: affiliate
+  examples: |
+    - affiliated
+    - is your college affilated
+    - university affiliated to ?
+    - is your college affilated to any university?
+    - affiliation
+- intent: facilities
+  examples: |
+    - facilities
+    - what facilities does your college provide?
+    - what facilities do you provide?
+    - what are the available facilities?
+    - what are various facilities provided by Modern College?
+- intent: fees
+  examples: |
+    - fees
+    - what are the fees for the courses?
+    - how much are the fees for modern college
+    - how much are the fees for taking admission in modern college
+- intent: hostel
+  examples: |
+    - hostel
+    - does your college provide hostel
+    - Does your college have hostel
+    - Hostel facility
+- intent: mission
+  examples: |
+    - mission
+    - mission of your college
+    - what is the mission of your college
+    - mission of modern college
+- intent: placement
+  examples: |
+    - placement
+    - does your college provide placement
+    - does your college provide job assistance
+    - job assistance
+    - companies for placement
+- intent: address
+  examples: |
+    - reach us
+    - address
+    - Address of the college
+    - what is address of the college
+    - How to reach to your college
+- intent: total_branches
+  examples: |
+    - How manhy branches does modern college have
+    - total branches
+    - How many streams does modern college have
+    - how many branches does your college have
+    - information about branches in your college
+- intent: vision
+  examples: |
+    - what is the vision of your college
+    - vision of college
+    - what is motto of your college
+    - motto
+    - vision
+- intent: entrance
+  examples: |
+    - entrance
+    - entrance exam
+    - timetable for entrance exam
+    - dates for entrance exam
+    - Link for the entrance exam
+- intent: dept_statistics
+  examples: |
+    - Information of statistics department
+    - Information about statistics
+    - Info of statistics department
+    - statistics department
+    - statistics
+- intent: courses_statistics
+  examples: |
+    - Courses under statisitics department
+    - Courses offered by statisitics department
+    - Courses offered by statisitics
+    - courses stats department
+    - statistics courses
+    - stats programmes
+- intent: dept_zoology
+  examples: |
+    - Information of zoology department
+    - Information about zoology
+    - Info of zoology department
+    - zoology department
+    - zoology
+- intent: courses_zoology
+  examples: |
+    - courses under zoology department
+    - courses offered by zoology department
+    - courses offered by zoology
+    - courses zoology department
+    - zoology courses
+    - zoology programmes
+- intent: dept_computer_science
+  examples: |
+    - Information of Computer Science department
+    - Information about Computer Science
+    - Info of Computer Science department
+    - Computer Science department
+    - CS Department
+- intent: courses_computer_science
+  examples: |
+    - Courses under computer science department
+    - Courses offered by computer science department
+    - Courses offered by computer science
+    - courses cs department
+    - computer science courses
+    - cs programmes
+- intent: dept_physics
+  examples: |
+    - Information of physics department
+    - Information about physics
+    - Info of physics department
+    - physics department
+    - physics
+- intent: courses_physics
+  examples: |
+    - Courses under physics department
+    - Courses offered by physics department
+    - Courses offered by physics
+    - courses physics department
+    - physics courses
+    - physics programmes
+- intent: dept_microbiology
+  examples: |
+    - Information of microbiology department
+    - Information about microbiology
+    - Info of microbiology department
+    - microbiology department
+    - microbiology
+- intent: courses_microbiology
+  examples: |
+    - Courses under microbiology department
+    - Courses offered by microbiology department
+    - Courses offered by microbiology
+    - courses microbiology department
+    - microbiology courses
+    - microbiology programmes
+- intent: dept_mathematics
+  examples: |
+    - Information of maths department
+    - Information about mathematics
+    - Information about maths
+    - Info of maths department
+    - mathematics department
+    - maths department
+    - maths
+    - mathematics
+- intent: courses_mathematics
+  examples: |
+    - Courses under mathematics department
+    - Courses offered by mathematics department
+    - Courses offered by mathematics
+    - courses maths department
+    - mathematics courses
+    - maths programmes
+- intent: dept_electronic_science
+  examples: |
+    - Information of electronic science department
+    - Information about electronic science
+    - Info of electronic science department
+    - electronic science department
+    - electronic science
+- intent: courses_electronic_science
+  examples: |
+    - Courses under electronic science department
+    - Courses offered by electronic science department
+    - Courses offered by  electronic science
+    - courses  electronic science department
+    - electronic science courses
+    - electronic science programmes
+- intent: dept_chemistry
+  examples: |
+    - Information of chemistry department
+    - Information about chemistry
+    - Info of chemistry department
+    - chemistry department
+    - chemistry
+- intent: courses_chemistry
+  examples: |
+    - Courses under chemistry department
+    - Courses offered by chemistry department
+    - Courses offered by chemistry
+    - courses chemistry department
+    - chemistry courses
+    - chemistry programmes
+- intent: dept_botany
+  examples: |
+    - Information of botany department
+    - Information about botany
+    - Info of botany department
+    - botany department
+    - botany
+- intent: courses_botany
+  examples: |
+    - Courses under botany department
+    - Courses offered by botany department
+    - Courses offered by botany
+    - courses botany department
+    - botany courses
+    - botany programmes
+- intent: dept_biotechnology
+  examples: |
+    - Information of biotechnology department
+    - Information about biotechnology
+    - Info of biotechnology department
+    - biotechnology department
+    - biotechnology
+- intent: courses_biotechnology
+  examples: |
+    - Courses under biotechnology department
+    - Courses offered by biotechnology department
+    - Courses offered by biotechnology
+    - courses biotechnology department
+    - biotechnology courses
+    - biotechnology programmes
+- intent: dept_english
+  examples: |
+    - Information of english department
+    - Information about english
+    - Info of english department
+    - english department
+    - english
+- intent: courses_english
+  examples: |
+    - Courses under english department
+    - Courses offered english department
+    - Courses offered by english
+    - courses english department
+    - english courses
+    - english programmes
+- intent: dept_german
+  examples: |
+    - Information of german department
+    - Information about german
+    - Info of german department
+    - german department
+    - german
+- intent: courses_german
+  examples: |
+    - Courses under german department
+    - Courses offered by german department
+    - Courses offered by german
+    - courses german department
+    - german courses
+    - german programmes
+- intent: dept_psychology
+  examples: |
+    - Information of psychology department
+    - Information about psychology
+    - Info of psychology department
+    - psychology department
+    - psychology
+- intent: courses_psychology
+  examples: |
+    - Courses under psychology department
+    - Courses offered by psychology department
+    - Courses offered by psychology
+    - courses psychology department
+    - psychology courses
+    - psychology programmes
+- intent: dept_hindi
+  examples: |
+    - Information of hindi department
+    - Information about hindi
+    - Info of hindi department
+    - hindi department
+    - hindi
+- intent: courses_hindi
+  examples: |
+    - Courses under hindi department
+    - Courses offered by hindi department
+    - Courses offered by hindi
+    - courses hindi department
+    - hindi courses
+    - hindi programmes
+- intent: dept_history
+  examples: |
+    - Information of history department
+    - Information about history
+    - Info of history department
+    - history department
+    - History department
+    - history
+- intent: courses_history
+  examples: |
+    - Courses under history department
+    - Courses offered by history department
+    - Courses offered by history
+    - courses history department
+    - history courses
+    - history programmes
+- intent: dept_fashion_technology
+  examples: |
+    - Information of fashion technology department
+    - Information about fashion technology
+    - Info of fashion technology department
+    - fashion technology department
+    - fashion technology
+- intent: courses_fashion_technology
+  examples: |
+    - Courses under fashion technology department
+    - Courses offered by fashion technology department
+    - Courses offered by fashion technology
+    - courses fashion technology department
+    - fashion technology courses
+    - fashion technology programmes
+- intent: dept_marathi
+  examples: |
+    - Information of marathi department
+    - Information about marathi
+    - Info of marathi department
+    - marathi department
+    - marathi
+- intent: courses_marathi
+  examples: |
+    - Courses under marathi department
+    - Courses offered by marathi department
+    - Courses offered by marathi
+    - courses marathi department
+    - marathi courses
+    - marathi programmes
+- intent: dept_geography
+  examples: |
+    - Information of geography department
+    - Information about geography
+    - Info of geography department
+    - geography department
+    - geography
+- intent: courses_geography
+  examples: |
+    - Courses under geography department
+    - Courses offered by geography department
+    - Courses offered by geography
+    - courses geography department
+    - geography courses
+    - geography programmes
+- intent: dept_political science
+  examples: |
+    - Information of political science department
+    - Information about political science
+    - Info of political science department
+    - political science department
+    - political science
+- intent: courses_political_science
+  examples: |
+    - Courses under political science department
+    - Courses offered by political science department
+    - Courses offered by political science
+    - courses political science department
+    - political science courses
+    - political science programmes
+- intent: dept_commerce_self
+  examples: |
+    - Information of commerce department
+    - Information about commerce
+    - Info of commerce department
+    - commerce department
+    - commerce
+- intent: courses_commerce_self
+  examples: |
+    - Courses under commerce self department
+    - Courses offered by commerce self department
+    - Courses offered by commerce self
+    - courses commerce self department
+    - commerce self courses
+    - commerce self programmes
+- intent: dept_commerce_grant
+  examples: |
+    - Information of commerce department
+    - Information about commerce
+    - Info of commerce department
+    - commerce department
+    - commerce
+- intent: courses_commerce_grant
+  examples: |
+    - Courses under commerce grant department
+    - Courses offered by commerce grant department
+    - Courses offered by commerce grant
+    - courses commerce grant department
+    - commerce grant courses
+    - commerce grant programmes
+- intent: dept_economics
+  examples: |
+    - Information of economics department
+    - Information about economics
+    - Info of economics department
+    - economics department
+    - economics
+- intent: courses_economics
+  examples: |
+    - Courses under economics department
+    - Courses offered by economics department
+    - Courses offered by economics
+    - courses economics department
+    - economics courses
+    - economics programmes
+- intent: dept_animation
+  examples: |
+    - Information of animation department
+    - Information about animation
+    - Info of animation department
+    - animation department
+    - animation
+- intent: courses_animation
+  examples: |
+    - Courses under animation department
+    - Courses offered by animation department
+    - Courses offered by animation
+    - courses animation department
+    - animation courses
+    - animation programmes
+- intent: HOD
+  examples: |
+    - Information about HODs
+    - Info about departments
+    - department and hod
+    - hod and department
+    - Head of departments
+    - hods
+- intent: library
+  examples: |
+    - Information about library
+    - Do you have library
+    - Library of modern college
+    - Library facility
+    - Does your college has library
+    - do you have library
+    - how can we access e-library
+    - e-library
+    - access e-library
+    - e-library account
+- intent: sports
+  examples: |
+    - Information about sports department
+    - Do you have facilties for sports
+    - Sports facility in modern college
+    - Sports facility
+    - Does your college provide sports activities
+    - do you have ground for sports
+- intent: ragging_cell
+  examples: |
+    - Information about antiragging cell
+    - Do you have antiragging cell
+    - antiragging cell of modern college
+    - antiragging facility
+    - Does your college has antiragging cell
+    - do you have antiragging cell
+- intent: principals_desk
+  examples: |
+    - Information about principal
+    - Information from principals desk
+    - Principal of modern college
+    - Principal desk modern college
+- intent: student_welfare
+  examples: |
+    - Information about student welfare
+    - Do you have student welfare
+    - student welfare of modern college
+    - student welfare facility
+    - Does your college has student welfare
+    - do you have student welfare
+- intent: branch_art
+  examples: |
+    - information about art branch
+    - information about art stream
+    - courses offered by art branch
+    - info about art branch
+    - art branch
+- intent: branch_science
+  examples: |
+    - information about science branch
+    - information about science stream
+    - courses offered by science branch
+    - info about science branch
+    - science branch
+- intent: branch_commerce
+  examples: |
+    - information about commerce branch
+    - information about commerce stream
+    - courses offered by commerce branch
+    - info about commerce branch
+    - commerce branch
+- intent: admission_form
+  examples: |
+    - how to fill admission form
+    - admission form
+    - admission form link
+    - link for admission form
+    - admission
+    - how can we take admission in modern college
+    - how to take admission in modern college
+    - admission process
+    - what is the admission process
+    - admission info
+- intent: id_card
+  examples: |
+    - how to access profile
+    - where to upload photo for id card
+    - how to upload photo
+    - how to create student profile
+    - link for creating student profile
+    - id card
+    - indentity card
+    - i card
+- intent: entrance_guide
+  examples: |
+    - pg entrance exam
+    - entrance exam guidance
+    - guidance for entrance exam
+    - guide for pg entrance exam
+    - entrance exam for pg guidelines
+- intent: entrance_pg_query
+  examples: |
+    - queries regarding entrance exam
+    - entrance exam query
+    - queries for entrance exam
+- intent: entrance_pg_link
+  examples: |
+    - link for pg entrance exam
+    - pg entrance exam link
+    - entrance examination link
+    - from where can i get link for entrance exam
+- intent: entrance_pg_date
+  examples: |
+    - what is the date od entrance exam?
+    - date of entrance exam
+    - entrance exams date
+- intent: link_for_admission
+  examples: |
+    - what is the link for admission process
+    - admission process link
+    - link for admission process
+    - where can I get link for admission process
+- intent: admission_form_guide_pg
+  examples: |
+    - guidelines for form submission
+    - form guidance
+- intent: req_doc_pg
+  examples: |
+    - required doc for pg admission
+    - what are the required documents for pg admission
+    - documents for pg admission
+    - pg admission documents
+- intent: eligibility_pg
+  examples: |
+    - what is the eligibility criteria for pg admission
+    - eligibility for pg
+    - pg eligibility
+    - eligibility criteria for pg admission
+- intent: steps_pg_admission
+  examples: |
+    - steps for pg admission
+    - pg admission steps
+    - steps to be followed for pg admisson
+    - admission process steps for pg
+- intent: admission_form_query_pg
+  examples: |
+    - i have query regarding pg admission form
+    - query about pg admission form
+    - admission form queries
+    - queries for admission form for pg
+- intent: late_admission_pg
+  examples: |
+    - late admission process for pg
+    - to whom we contact for the late admission process
+    - process for late admission
+    - point of contact for the late admission
+- intent: admission_form_guide_ug
+  examples: |
+    - guidelines for form submission
+    - form guidance
+- intent: req_doc_ug
+  examples: |
+    - required doc for ug admission
+    - what are the required documents for ug admission
+    - documents for ug admission
+    - ug admission documents
+- intent: eligibility_ug
+  examples: |
+    - what is the eligibility criteria for ug admission
+    - eligibility for ug
+    - ug eligibility
+    - eligibility criteria for ug admission
+- intent: steps_ug_admission
+  examples: |
+    - steps for ug admission
+    - ug admission steps
+    - steps to be followed for ug admisson
+    - admission process steps for ug
+- intent: admission_form_query_ug
+  examples: |
+    - i have query regarding ug admission form
+    - query about ug admission form
+    - admission form queries
+    - queries for admission form for ug
+- intent: late_admission_ug
+  examples: |
+    - late admission process for ug
+    - to whom we contact for the late admission process
+    - process for late admission
+    - point of contact for the late admission
+- intent: new_ug_queries_adm
+  examples: |
+    - queries to be mentioned
+- intent: new_ug_guidance_adm
+  examples: |
+    - Guidance for UG admission
+    - Merit form filling process
+    - Merit list link
+    - Documents required for ug admission process
+    - Notices regarding ug admission form
+- intent: new_ug_link_adm
+  examples: |
+    - link for FY adnission link
+    - link for First Year Admission link
+    - admission link for FY admission
+- intent: new_ug_adm_cancle
+  examples: |
+    - how to cancle admission
+    - admission cancelling process
+    - cancellation process for first year
+- intent: website_stuck
+  examples: |
+    - what can i do, website is stuck
+    - website is stuck
+    - website stuck
+    - website is not loaded
+- intent: doc_not_available
+  examples: |
+    - what should i do, my documents are not availble right now
+    - documents not available
+    - required documents are not available not available
+    - income certificate is not available
+    - caste certificate is not available
+    - non-criminality is not avaiable
+- intent: ps_not_uploaded
+  examples: |
+    - photo is not uploading
+    - signature is not uploading
+    - what is predefined size for photo
+    - what is predefined size for sign
+    - size of photo
+    - size of signature
+    - required size of photo
+    - required size of signature
+- intent: last_date_of_admission
+  examples: |
+    - what is the last date of admission process
+    - last date of admission process
+    - admission process last date
+- intent: examination
+  examples: |
+    - information about examination
+    - exams
+    - info about exams
+    - exams information
+    - examinations
+    - examination information
+    - how to fill exam form
+    - exam form
+    - exam form link
+    - link for exam form
+- intent: ug_exam
+  examples: |
+    - information about exam for UG students
+    - UG students examination information
+    - UG exams information
+- intent: exam_form_guide_ug
+  examples: |
+    - exam form process for ug
+    - guidelines for exam form submission of ug
+    - exam form guidance for ug
+- intent: steps_exam_form
+  examples: |
+    - steps for exam form ug and pg
+    - ug exam form steps
+    - steps to be followed for exam form ug and pg
+    - exam form process steps for ug and pg
+- intent: exam_form_query_ug
+  examples: |
+    - i have query regarding ug exam form
+    - query about ug exam form
+    - exam form queries for ug
+    - queries for exam form for pu
+- intent: pg_exam
+  examples: |
+    - information about exam for PG students
+    - PG students examination information
+    - PG exams information
+- intent: exam_form_guide_pg
+  examples: |
+    - exam form process
+    - guidelines for exam form submission
+    - exam form guidance
+- intent: exam_form_query_pg
+  examples: |
+    - i have query regarding pg exam form
+    - query about pg exam form
+    - exam form queries
+    - queries for exam form for pg
+- intent: link_for_exam_form
+  examples: |
+    - link for exam form
+    - exam form link
+    - where can we get link for exam form
+- intent: delete_exam_form
+  examples: |
+    - how to delete exam form ?
+    - process for deleting exam form
+    - delete exam form steps
+- intent: reapply_exam_form
+  examples: |
+    - how to reapply for exam form
+    - reapplication for exam form
+- intent: ms_teams
+  examples: |
+    - Info about ms_teams
+    - ms teams
+- intent: ms_teams_login
+  examples: |
+    - how to login for ms teams
+    - how to reset password for ms teams
+    - login information for ms teams
+    - steps for login through ms teams
+- intent: ms_teams_appear_for_exam
+  examples: |
+    - how to appear for exam through ms teams
+    - exam mode for ms teams
+    - steps for appearing for exam through ms teams
+- intent: scholarship_info
+  examples: |
+    - Scholarship information
+    - information regarding scholarship
+    - scholarship
+    - does your college provide scholarship
+    - what scholarships are available for students
+    - does modern college provide scholarship
+    - info about scholarship
+- intent: sch_government
+  examples: |
+    - Government scholarship
+    - Available government scholarships
+    - government scholarship 
+- intent: sch_private
+  examples: |
+    - Private scholarship
+    - Available private scholarships
+    - Private scholarship 
+- intent: sch_govern_general
+  examples: |
+    - Government scholarship for open cast
+    - Scholarship for open cast
+- intent: sch_govern_obc
+  examples: |
+    - Government scholarship for obc cast
+    - Scholarship info for obc cast
+- intent: sch_govern_sbc
+  examples: |
+    - Government scholarship for sbc cast
+    - Scholarship for sbc cast
+- intent: sch_govern_sc
+  examples: |
+    - Government scholarship for sc cast
+    - Scholarship for sc cast
+- intent: sch_govern_st
+  examples: |
+    - Government scholarship for st cast
+    - Scholarship for st cast
+- intent: sch_govern_vjnt
+  examples: |
+    - Government scholarship for vjnt cast
+    - Scholarship for vjnt cast
+- intent: sch_govern_general_I_less_1lac
+  examples: |
+    - Government scholarship for open cast
+    - Scholarship for open cast
+- intent: sch_govern_general_Rajashri_shahu
+  examples: |
+    - abcd
+- intent: sch_govern_general_I_more_1lac
+  examples: |
+    - Government scholarship for open cast
+    - Scholarship for open cast
+- intent: sch_govern_general_Dr_Punjabrao
+  examples: |
+    - abcd
+- intent: sch_govern_obc_I_less_1.5lac
+  examples: |
+    - Government scholarship for obc cast
+    - Scholarship for obc cast
+- intent: sch_govern_obc_post_metric
+  examples: |
+    - abcd
+- intent: sch_govern_obc_8lac_more_I_more_1.5lac
+  examples: |
+    - Government scholarship for obc cast
+    - Scholarship for obc cast
+- intent: sch_govern_obc_tution_fee
+  examples: |
+    - abcd
+- intent: sch_govern_sbc_I_less_1.5lac
+  examples: |
+    - Government scholarship for sbc cast
+    - Scholarship for sbc cast
+- intent: sch_govern_sbc_post_metric
+  examples: |
+    - abcd
+- intent: sch_govern_sbc_8lac_more_I_more_1.5lac
+  examples: |
+    - Government scholarship for sbc cast
+    - Scholarship for sbc cast
+- intent: sch_govern_sbc_tution_fee
+  examples: |
+    - abcd
+- intent: sch_govern_sc_I_less_2.5lac
+  examples: |
+    - Government scholarship for sc cast
+    - Scholarship for sc cast
+- intent: sch_govern_sc_post_metric
+  examples: |
+    - abcd
+- intent: sch_govern_sc_I_more_2.5lac
+  examples: |
+    - Government scholarship for sc cast
+    - Scholarship for sc cast
+- intent: sch_govern_sc_tution_fee
+  examples: |
+    - abcd
+- intent: sch_govern_st_I_less_2.5lac
+  examples: |
+    - Government scholarship for st cast
+    - Scholarship for st cast
+- intent: sch_govern_st_post_metric
+  examples: |
+    - abcd
+- intent: sch_govern_st_I_more_2.5lac
+  examples: |
+    - Government scholarship for st cast
+    - Scholarship for st cast
+- intent: sch_govern_st_tution_fee
+  examples: |
+    - abcd
+- intent: sch_govern_vjnt_I_less_1.5lac
+  examples: |
+    - Government scholarship for vjnt cast
+    - Scholarship for vjnt cast
+- intent: sch_govern_vjnt_post_metric
+  examples: |
+    - abcd
+- intent: sch_govern_vjnt_8lac_more_I_more_1.5lac
+  examples: |
+    - Government scholarship for vjnt cast
+    - Scholarship for vjnt cast
+- intent: sch_govern_vjnt_tution_fee
+  examples: |
+    - abcd
+- intent: sch_pri_Cytel_I<1lakh
+  examples: |
+    - Private scholarship
+    - Available private scholarships
+    - Private scholarship info
+- intent: sch_pri_emcure_pharmaceuticals_I<3lakh
+  examples: |
+    - Private scholarship
+    - Available private scholarships
+    - Private scholarship info
+- intent: sch_pri_geeta_israni_I<4lakh
+  examples: |
+    - Private scholarship
+    - Available private scholarships
+    - Private scholarship info
+- intent: sch_pri_ashutosh_karandikar_I<5lakh
+  examples: |
+    - Private scholarship
+    - Available private scholarships
+    - Private scholarship info
+- intent: process_for_tc_lc
+  examples: |
+    - process for applying for lc and tc
+    - how to apply for lc
+    - how to apply for tc
+    - Process for tc
+    - process for lc
+- intent: awards
+  examples: |
+    - awards for college
+    - list of awards 
+- intent: adm_junior
+  examples: |
+    - Junior college admission process
+    - 11th admission process
+    - 12th admission process
+    - information regarding 11th admission 
+- intent: adm_junior_11
+  examples: |
+    - 11th admission process
+    - admission process for 11th 
+- intent: junior_11_notice
+  examples: |
+    - Notices regarding admission process
+    - admission process for 11th 
+- intent: junior_11_dou_req
+  examples: |
+    - documents required for 11th admission process
+    - documents for 11th admission 
+- intent: adm_junior_12
+  examples: |
+    - 12th admission process
+    - admission process for 12th std
+- intent: steps_adm_12
+  examples: |
+    - steps of admission process for 12th std
+    - hsc admission process
+
+
+
+    

@@ -1,0 +1,1379 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- parking:
+    use_entities: true
+- exam:
+    use_entities: true
+- about_us:
+    use_entities: true
+- affiliate:
+    use_entities: true
+- facilities:
+    use_entities: true
+- fees:
+    use_entities: true
+- hostel:
+    use_entities: true
+- mission:
+    use_entities: true
+- placement:
+    use_entities: true
+- address:
+    use_entities: true
+- total_branches:
+    use_entities: true
+- vision:
+    use_entities: true
+- entrance:
+    use_entities: true
+- dept_statistics:
+    use_entities: true
+- dept_zoology:
+    use_entities: true
+- dept_computer_science:
+    use_entities: true
+- dept_physics:
+    use_entities: true
+- dept_microbiology:
+    use_entities: true
+- dept_mathematics:
+    use_entities: true
+- dept_electronic_science:
+    use_entities: true
+- dept_chemistry:
+    use_entities: true
+- dept_botany:
+    use_entities: true
+- dept_biotechnology:
+    use_entities: true
+- dept_english:
+    use_entities: true
+- dept_german:
+    use_entities: true
+- dept_psychology:
+    use_entities: true
+- dept_hindi:
+    use_entities: true
+- dept_history:
+    use_entities: true
+- dept_fashion_technology:
+    use_entities: true
+- dept_marathi:
+    use_entities: true
+- dept_geography:
+    use_entities: true
+- dept_political_science:
+    use_entities: true
+- dept_commerce_self:
+    use_entities: true
+- dept_commerce_grant:
+    use_entities: true
+- dept_economics:
+    use_entities: true
+- courses_statistics:
+    use_entities: true
+- courses_zoology:
+    use_entities: true
+- courses_computer_science:
+    use_entities: true
+- courses_physics:
+    use_entities: true
+- courses_microbiology:
+    use_entities: true
+- courses_mathematics:
+    use_entities: true
+- courses_electronic_science:
+    use_entities: true
+- courses_chemistry:
+    use_entities: true
+- courses_botany:
+    use_entities: true
+- courses_biotechnology:
+    use_entities: true
+- courses_english:
+    use_entities: true
+- courses_german:
+    use_entities: true
+- courses_psychology:
+    use_entities: true
+- courses_hindi:
+    use_entities: true
+- courses_history:
+    use_entities: true
+- courses_fashion_technology:
+    use_entities: true
+- courses_marathi:
+    use_entities: true
+- courses_geography:
+    use_entities: true
+- courses_political_science:
+    use_entities: true
+- courses_commerce_self:
+    use_entities: true
+- courses_commerce_grant:
+    use_entities: true
+- courses_economics:
+    use_entities: true
+- HOD:
+    use_entities: true
+- library:
+    use_entities: true
+- sports:
+    use_entities: true
+- dept_animation:
+    use_entities: true
+- courses_animation:
+    use_entities: true
+- ragging_cell:
+    use_entities: true
+- principals_desk:
+    use_entities: true
+- student_welfare:
+    use_entities: true
+- branch_art:
+    use_entities: true
+- branch_science:
+    use_entities: true
+- branch_commerce:
+    use_entities: true
+- admission_form:
+    use_entities: true
+- id_card:
+    use_entities: true
+- ug_admission:
+    use_entities: true
+- pg_admission:
+    use_entities: true
+- link_for_admission:
+    use_entities: true
+- admission_form_guide_pg:
+    use_entities: true
+- req_doc_pg:
+    use_entities: true
+- eligibility_pg:
+    use_entities: true
+- steps_pg_admission:
+    use_entities: true
+- admission_form_query_pg:
+    use_entities: true
+- late_admission_pg:
+    use_entities: true
+- admission_form_guide_ug:
+    use_entities: true
+- req_doc_ug:
+    use_entities: true
+- eligibility_ug:
+    use_entities: true
+- steps_ug_admission:
+    use_entities: true
+- admission_form_query_ug:
+    use_entities: true
+- late_admission_ug:
+    use_entities: true
+- website_stuck:
+    use_entities: true
+- doc_not_available:
+    use_entities: true
+- ps_not_uploaded:
+    use_entities: true
+- last_date_of_admission:
+    use_entities: true
+- exam_form_guide_ug:
+    use_entities: true
+- exam_form_query_ug:
+    use_entities: true
+- steps_exam_form:
+    use_entities: true
+- exam_form_guide_pg:
+    use_entities: true
+- exam_form_query_pg:
+    use_entities: true
+- delete_exam_form:
+    use_entities: true
+- reapply_exam_form:
+    use_entities: true
+- link_for_exam_form:
+    use_entities: true
+- dept_political science:
+    use_entities: true
+- examination:
+    use_entities: true
+- ug_exam:
+    use_entities: true
+- pg_exam:
+    use_entities: true
+- new_ug_student:
+    use_entities: true
+- existing_ug_student:
+    use_entities: true
+- new_pg_student:
+    use_entities: true
+- existing_pg_student:
+    use_entities: true
+- entrance_guide:
+    use_entities: true
+- entrance_pg_query:
+    use_entities: true
+- entrance_pg_link:
+    use_entities: true
+- entrance_pg_date:
+    use_entities: true
+- new_ug_queries_adm:
+    use_entities: true
+- new_ug_guidance_adm:
+    use_entities: true
+- new_ug_link_adm:
+    use_entities: true
+- new_ug_adm_cancle:
+    use_entities: true
+- ms_teams:
+    use_entities: true
+- ms_teams_login:
+    use_entities: true
+- ms_teams_appear_for_exam:
+    use_entities: true
+- scholarship_info:
+    use_entities: true
+- sch_government:
+    use_entities: true
+- sch_private:
+    use_entities: true
+- sch_govern_general:
+    use_entities: true
+- sch_govern_obc:
+    use_entities: true
+- sch_govern_sbc:
+    use_entities: true
+- sch_govern_sc:
+    use_entities: true
+- sch_govern_st:
+    use_entities: true
+- sch_govern_vjnt:
+    use_entities: true
+- sch_govern_general_I_less_1lac:
+    use_entities: true
+- sch_govern_general_Rajashri_shahu:
+    use_entities: true
+- sch_govern_general_I_more_1lac:
+    use_entities: true
+- sch_govern_general_Dr_Punjabrao:
+    use_entities: true
+- sch_govern_obc_I_less_1.5lac:
+    use_entities: true
+- sch_govern_obc_post_metric:
+    use_entities: true
+- sch_govern_obc_8lac_more_I_more_1.5lac:
+    use_entities: true
+- sch_govern_obc_tution_fee:
+    use_entities: true
+- sch_govern_sbc_I_less_1.5lac:
+    use_entities: true
+- sch_govern_sbc_post_metric:
+    use_entities: true
+- sch_govern_sbc_8lac_more_I_more_1.5lac:
+    use_entities: true
+- sch_govern_sbc_tution_fee:
+    use_entities: true
+- sch_govern_sc_I_less_2.5lac:
+    use_entities: true
+- sch_govern_sc_post_metric:
+    use_entities: true
+- sch_govern_sc_I_more_2.5lac:
+    use_entities: true
+- sch_govern_sc_tution_fee:
+    use_entities: true
+- sch_govern_st_I_less_2.5lac:
+    use_entities: true
+- sch_govern_st_post_metric:
+    use_entities: true
+- sch_govern_st_I_more_2.5lac:
+    use_entities: true
+- sch_govern_st_tution_fee:
+    use_entities: true
+- sch_govern_vjnt_I_less_1.5lac:
+    use_entities: true
+- sch_govern_vjnt_post_metric:
+    use_entities: true
+- sch_govern_vjnt_8lac_more_I_more_1.5lac:
+    use_entities: true
+- sch_govern_vjnt_tution_fee:
+    use_entities: true
+- sch_pri_Cytel_I<1lakh:
+    use_entities: true
+- sch_pri_emcure_pharmaceuticals_I<3lakh:
+    use_entities: true
+- sch_pri_geeta_israni_I<4lakh:
+    use_entities: true
+- sch_pri_ashutosh_karandikar_I<5lakh:
+    use_entities: true
+- process_for_tc_lc:
+    use_entities: true
+- awards:
+    use_entities: true
+- adm_junior:
+    use_entities: true
+- adm_junior_11:
+    use_entities: true
+- junior_11_notice:
+    use_entities: true
+- junior_11_dou_req:
+    use_entities: true
+- adm_junior_12:
+    use_entities: true
+- steps_adm_12:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you? I am chatbot designed for Modern College. I can assist you for the following mentioned queries
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am chatbot designed for Modern College. How can I assist you
+  utter_parking:
+  - text: Modern College provides parking facility to all students and faculties
+  utter_about_us:
+  - text: Modern College of Arts, Science & Commerce Institute of Technology (MCASC) has started functioning with commitment of imparting state of art technical education so as to inculcate conceptual know-how, analyzing skills, decision making abilities and leadership qualities in the students.MCASC stands committed to the intellectual and moral growth of every student.MCASC has experienced and proficient team which aspires to unlock the hidden potential in subconscious minds of students and to create competent Engineers with vision & social commitment.
+  utter_affiliate:
+  - text: Modern College of Arts, Science and Commerce, Shivajinagar,Pune-5 was established on 15th June 1970 and affiliated to Savitribai Phule Pune University. Our college is recognized by UGC under 2(f) and 12(B) since 1970. The college provides various Academic amenities so as to attain Bachelor and Master degrees in the fields of Arts, Science, Commerce, Computer Science & Computer Application. The college is a reputed educational institution, which has been known for producing outstanding students who take on different careers, as per their academic merit, successfully in the society.
+  utter_dept_statistics:
+  - text: |-
+      Statistics Department established in 1970’s as Mathematics and Statistics department. Department established as a separate statistics department in 1979. It is the first college in Pune University with statistics special at M.Com. Level started in 1979. In department B.Sc. with statistics special started in 1979. The statistical Department is one of the departments in college which has teaching programme of statistics at principal level for B.Sc. and at special level for B.com and M.com. for more than 35 years.
+      Salient features of the Department- 
+       Department of Statistics is well equipped with computers, laptops and LCD projectors with internet facility. 
+       We are conducting Statistical Fest every year to inculpate soft skills of the students 
+       We are conducting various students’ activities such as quiz, poster competition, problem corner. 
+       SAS software Training programme is conducted for M.Sc. Students. 
+       Internship Training programme with National Sample Survey organization, Pune (NSSO) and National Academy of Statistical Administration (NASA). 
+       CYTEL Software sponsored scholarship for needy students. 
+      for more information click on following link- http://moderncollegepune.edu.in/department/statistics/
+  utter_courses_statistics:
+  - buttons:
+    - payload: /dept_statistics
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: |-
+      "B. Sc. Statistics (Principal)
+      M. Sc. Statistics
+      B. Com. Statistics
+      M. Com. Statistics
+      Skill Development Course ‘SAS’ (30 hours)
+      Skill Development Course ‘Biostatistics’ (15 hours)
+       For more information you can click on the below buttons"
+  utter_dept_zoology:
+  - text: "Department of Zoology was established along with college in 1970 as a part of Biology Department. The T.Y. B.Sc. classes were started from 1979 and M.Sc. Zoology (Entomology     Specialization) commenced from 1994.\n
+   Salient Features of the Department-\n
+     Highly qualified and experienced teaching staff.\n
+     Efficient and cordial non- teaching staff.\n
+     Excellent results every year (between 90% to 100%)\n
+     Few ex-students with outstanding career.\n
+    for more information click on following link- http://moderncollegepune.edu.in/department/zoology/"
+  utter_courses_zoology:
+  - buttons:
+    - payload: /dept_zoology
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.sc in Zoology Post Graduate wing M.Phil /Ph.D.
+  utter_dept_computer_science:
+  - text: "The need of the hour is excellence in every field of operation and particularly “Information Technology”. Realizing this need, the Computer Science Department, Modern College, Pune-05 is engaged in molding tomorrow’s information and communication technologists today. Our students are in the field of Computer Science and Applications. Their entry for the course is on the basis of merit. At the undergraduate level their performance at HSC (Science) with mathematics as compulsory subject is the criteria for the admission.\n
+  Salient Features of the Department-\n
+   Established in 1986 Pioneer in the field of Computer Science.\n
+   Well-equipped Lab with ultra-modern facilities.\n
+   Young, experienced, qualified and highly motivated staff.\n
+   Wi-Fi enabled department.\n
+   Strong and active alumni support.\n
+   ICT enabled teaching learning in fracture with digitally equipped classrooms.\n
+   More than 95% placement with active placement cell.\n
+   for more information click on following link-http://moderncollegepune.edu.in/department/computer/"
+  utter_courses_computer_science:
+  - buttons:
+    - payload: /dept_computer_science
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B. Sc. Computer Science M. Sc. Computer Science B. Sc. Animation BCA Science M.Sc Computer Application
+  utter_dept_physics:
+  - text: "The department of Physics is one of the largest and oldest departments in Modern College. The department of Physics was instituted from the inception of the college in June 1970. Physics as principal subject was started from June 1973. It offers courses at the Undergraduate and Post- graduate levels. The Undergraduate centre offers Material Science, Instrumentation, Advanced Electronics, Nanotechnology, Astrophysics as elective courses at UG level.\n
+  Salient Features of the Department-\n
+   The department has 4 well equipped and dedicated laboratories. Physics department has also applied to SPPU for recognized research centre.\n
+   Faculty members are actively involved in syllabus forming and restructuring at University level for both Undergraduate &amp; Post-Graduate levels.\n
+   Research projects are funded by BCUD-SPPU.\n
+   Research carried out by faculty members are published in National and International journals, seminars and conferences.\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/physics/"
+  utter_courses_physics:
+  - buttons:
+    - payload: /dept_physics
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.Sc.Physics M.Sc.Physics P.hd
+  utter_dept_microbiology:
+  - text: "Immunology, Biochemistry, Genetics, Molecular Biology, Virology, Air -, Water -, Soil -, Agriculture -, Food -, Dairy, Space Microbiology, Biotechnology, Fermentation Technology etc. has never ending impact on human life and making earth a better place to live.\n
+  Salient Features of the Department-\n
+   Well qualified, skilled and dedicated faculty\n
+   Advanced teaching and learning resources and methods\n
+   Career guidance and placement cell for students.\n
+   Collaborations with various Departments of Savitribai Phule Pune University and other reputed institutes such as NIV, NCL, NCCS, NARI, etc. for research projects.\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/microbiology/"
+  utter_courses_microbiology:
+  - buttons:
+    - payload: /dept_microbiology
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.Sc.Microbiology M.Sc.Microbiology Skill Development course 'Pharmaceutical Techniques'
+  utter_dept_mathematics:
+  - text: "The Progressive Education Society’s Modern College of Arts, Science and Commerce, Shivajinagar, Pune-5 was started by the initiative of honourable Tatake Sir in June 1970. Prof. Limaye was first Principal of the college. For the first ten years, there was a combined Department of Mathematics and Statistics, headed by Prof. P.S. Chirputkar.\n
+   for more information click on following link- http://moderncollegepune.edu.in/department/mathematics/"
+  utter_courses_mathematics:
+  - buttons:
+    - payload: /dept_mathematics
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.Sc.(Mathematics) M.Sc.(Mathematics)Mathematics(Jr. College Level )
+  utter_dept_electronic_science:
+  - text: "The department of Electronic Science was formally established as separate department from June 1994. Earlier it was a part of Physics department. Modern college was the first among few colleges in Pune University to start Electronic Science as a separate discipline in 1985, when University introduced this subject.\n
+  Salient Features-\n
+   Well Equipped Laboratories\n
+   Qualified Staff\n
+   Personal attention and counselling for students\n
+   Opportunity for the students to conduct projects in National level institutes\n
+   Interactive Alumni\n
+   Digital Class room\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/electronic-science/"
+  utter_courses_electronic_science:
+  - buttons:
+    - payload: /dept_electronic_science
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.Sc.(Electronic Science) M.Sc.(Electronic Science) Vocational Electronics B.Sc.(Comp.Sc) Ph.D. Electronic Science
+  utter_dept_chemistry:
+  - text: "The Department of Chemistry of this college has been established in 1970. The department is in function of running 11th, 12th, under graduate (B.Sc.) and Post Graduate (M.Sc. Analytical Chemistry) courses. Most of the faculties from senior wing are Ph. D. and remaining teachers are also pursuing it from various prestigious research centres. The department is fully equipped with instruments, equipment and departmental books library to study the Chemistry in more effective manner at Jr, UG and PG levels.\n
+  Salient Features-\n
+   -Laboratories\n
+   -Departmental Library\n
+   -Internet Facility\n
+   -Research Laboratory\n
+    for more information click on following link- http://moderncollegepune.edu.in/department/chemistry/"
+  utter_courses_chemistry:
+  - buttons:
+    - payload: /dept_chemistry
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.Sc.Chemistry M.Sc.Chemistry Skill Development course in Chemistry ‘Entrepreneurship Development’
+  utter_dept_botany:
+  - text: "Department of Botany was established in 1971 with Botany as Graduate course under the leadership of Dr A K Pande. The Post graduate Department was established in 1993 .The Botany department was granted recognized research cent er in 1984. The area of Botany department is 4400 sq. feet and has 4 laboratories including research laboratory and plant tissue culture laboratory. The departmental library has more than 300 books. The labs are equipped with LCDs, and OHPs. Botanical garden is well maintained by the department with shade net house and medicinal plants.\n
+  Salient Features of the Department-\n
+   Well experienced and qualified  staff\n
+   Well-equipped and spacious laboratories\n
+   Well maintained collection and display of botanical specimens\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/botany/"
+  utter_courses_botany:
+  - buttons:
+    - payload: /dept_botany
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.Sc.Botany M.Sc.Botany Ph.D.Botany Skill Development course ‘Plant Tissue Culture’ Skill Development course ‘Seed Technology’
+  utter_dept_biotechnology:
+  - text: "Keeping in view outlay and applications of biotechnology in every field to accomplish the eternal demand for resource personnel with specialization in biotechnology, the college established Department of Biotechnology in 2005. The Department offers both B.Sc. and M.Sc. courses in Biotechnology affiliated to Savitribai Phule Pune University.\n
+  Salient Features of the Department-\n
+   Well-equipped spacious laboratories with the necessary infrastructure.\n
+   Qualified, experienced and dedicated staff with research experience in interdisciplinary sciences.\n
+   Research laboratory with latest instruments like HPLC, PCR, Fermentor, etc.\n
+   Separate Animal Tissue Culture, Plant Tissue Culture, Cell and Molecular Biology, Microbiology Laboratories.\n
+   Bioinformatics laboratory with internet connections.\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/biotech/"
+  utter_courses_biotechnology:
+  - buttons:
+    - payload: /dept_biotechnology
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.Sc.Biotechnology M.Sc.Biotechnology M.Phil.Biotechnology Skill Development Course in ‘Animal Tissue Culture’
+  utter_dept_english:
+  - text: "The Department of English was established in 1970. The undergraduate course was started in 1970 and postgraduate course was started in 1994. The department envisions creating skilled human resource in the field of English language and literature. Salient Features of the Department-\n
+   Well qualified, skilled and dedicated faculty.  Advanced teaching and learning resources and methods.\n
+   Career guidance for students.\n
+   Associations with British Council Library, Pune, BITS, Pune, STC, Pune and Rotary Club ofr Pune, Shivajinagar.\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/english/"
+  utter_courses_english:
+  - buttons:
+    - payload: /dept_english
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: 'B.A.English M.A.English F.Y.b.Com S.Y.B.Sc Proposed Courses : 1. Certificate Course in Technical Writing 2. Technical Translation 3. Instructional Designing'
+  utter_dept_german:
+  - text: "The department of German offers undergraduate courses for German. German was introduced in the junior wing in 1976. It was introduced in the senior wing of commerce in 2001, and in the Arts faculty in 2009. Since then it has been flourishing.\n
+  Salient Features of the Department-\n
+   The department offers add-on courses, thus preparing the students for internationally acclaimed examinations of Goethe Institute, Max Mueller Bhavan, Pune.\n
+   We are associated with DAAD (German Academic Service Exchange) through which we attend seminars and workshops for teachers and students.\n
+   The department also organizes industrial visits for students to popular German setups in Pune.\n
+   We offer insight into career opportunities, by conducting guest lectures.\n
+   Students can interact with German natives and thus broaden their knowledge about German culture and language.\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/german/"
+  utter_courses_german:
+  - buttons:
+    - payload: /dept_german
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.A. in German T.Y.B.A German as a general Subject S.Y.B.A German as a general Subject F.Y.B.A German as a general Subject for  advanced learners F.Y.B.A German as a general Subject for beginners F.Y.B.Com German as a general Subject for beginners Skill Development Course Level 1 (A1) 2010 Skill Development Course Level 2 (A2) 2010
+  utter_dept_psychology:
+  - text: "The department of Psychology, Modern College of Arts, Science and Commerce, Shivajinagar Pune 05, was established in the year 1971 under the guidance of Dr. Shamala S.Vanarase who served as its head until 1979. Then after it was headed by Mrs. Sudha A, Shaligram until 1998 .At present the department is under the able leadership of Dr. Amruta S.Oke.\n
+  Salient Features of the Department-\n
+   Our students get excellent placements in various educational institutes, in corporate sector as well as in different non-governmental organisations.\n
+   Students are encouraged as well as sponsored to present research papers in National and International seminars and conferences.\n
+   Ample co-curricular activities are organized with emphasis on practical skills and applications of theoretical concepts not covered in syllabus.\n
+   for more information click on following link- http://moderncollegepune.edu.in/department/psychology/"
+  utter_courses_psychology:
+  - buttons:
+    - payload: /dept_psychology
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: F.Y.B.A S.Y.B.A T.Y.B.A
+  utter_dept_hindi:
+  - text: "Hindi Department was started in 1970 in Modern College, Shivajinagar, Pune-05. Dr. Shrirang Sangoram was the first head of the Hindi Department in  college. Dr. Sangoram was well known critic of Hindi literature and he was also a scholar in classical music. He contributed too many literary, grammatical &amp; musical terms.\n
+  Salient Features of the Department-\n
+  1. Qualified staff.\n
+  2. To improve writing skills, we take practice tests, assignments and group projects.\n
+  3. We conduct various activities for student’s progress.\n
+  4. Career Guidance for the students.\n
+  5. Our many students got prizes in various competitions at intercollegiate level.\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/hindi/"
+  utter_courses_hindi:
+  - buttons:
+    - payload: /dept_hindi
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: |-
+      F.Y.B.A.Hindi General S.Y.B.A.Hindi General T.Y.B.A.Hindi General F.Y.B.Com.Hindi Additional S.Y.B.A.Hindi Special- 1 & 2 T.Y.B.A.Hindi Special- 3 & 4
+      Proposed Courses in the future :- Post Graduate Course- M.A. Hindi Literature. Spoken Hindi Course for Foreign Students. Diploma in Translation in Hindi to Marathi & English.
+  utter_dept_history:
+  - text: "The department established in 1971. The eminent History Teacher Mr. M. A. Kulkarni was the first Head of the department. He taught with his research experience. After his retirement, In 2001 Prof. Dr. Rajesh kulkarni became HOD. Dr. Rajesh kulkarni is University gold medallist &amp; National scholar. Dr. Manda Admane is also a part-time faculty of the History department\n
+  Salient Features of the Department-\n
+   Measum – Human Culture information.\n
+   Speciality -Traditional knowledge ( Meditation, Yoga, Traditional wisdom)\n
+   Collection- Videos on Indian History\n
+   Books- Authored by faculties for Students\n
+   Art gallery- Lord Buddha’s Paintings\n
+   Guidance – Competitive Exams /Nation &amp; Human Service.\n
+   Edify -Traditional Meditations. ( Open for all ).\n
+   Consultancy – Careeres in History.\n
+   Faculties- Experienced &amp; PhD Holders.\n
+   Connection – verious sectors connectivity for Jobs / enterprinerships for students.\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/history/"
+  utter_courses_history:
+  - buttons:
+    - payload: /dept_history
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.A.History(English Medium) B.A.History(Marathi Medium) Skill Development Course in ‘Modi Script’
+  utter_dept_fashion_technology:
+  - text: "The University Grants Commission (UGC) has launched the Community College model, which will be accessible to a large number of individuals of the community. It will offer low cost and high quality education locally based upon vocational skills. The programs conducted as part of the Community college focuses on universities and colleges providing undergraduate studies which would also incorporate specific job roles and their National Occupational Standards (NOSs) and NVEQF levels.\n
+  Aims-  Judicious mix of skills relating to fashion technology\n
+   Adequate knowledge and skills to enable them to be work ready\n
+   Practical orientation with theoretical base\n
+   Flexibility to students by means of pre-defined entry and multiple exit points in two steps\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/fashion-designing/"
+  utter_courses_fashion_technology:
+  - buttons:
+    - payload: /dept_fashion_technology
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: Certificate Diploma  B.Voc.Fashion Technology and Appreal Design Skill Development Courses Bag Making Tie and Die Folkart (Madhubani, Warli, Gond) Block Printing Textile Painting SOT Creative Art Modules
+  utter_dept_marathi:
+  - text: "The department of Marathi on its very year of inception that is from 1970 has proved its work. It is one of the active and result oriented departments of our college. For over last 44 years, it has proved to be a source of career building to the students not only of the Arts faculty but even for the students from Science and Commerce faculty. In 1994 department commence post graduate course. Department started research centre successfully in 2013.\n
+  Salient features of the department-\n
+   To improve written Marathi skills we conduct test every fifteen days and conduct competitions.\n
+   For improvement of diction of the students we conduct competition.\n
+   For preservation of old and out of print books lamination and binding of the copies of rare books.\n
+   Thirteen students of special class will be given assistance for higher education.\n
+   Facilities available in the Department (Infrastructure, Instruments, Equipment, Internet, Departmental Library) \n
+  for more information click on following link- http://moderncollegepune.edu.in/department/marathi/"
+  utter_courses_marathi:
+  - buttons:
+    - payload: /dept_marathi
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.A.Marathi(General) B.A.Marathi(Special) M.A.Marathi Ph.D. in Marathi Skill Development Course – ‘English – Marathi Translation Course’ Skill Development Course – ‘Marathichya Praman Bhasheche Lekhan’ Certificate course in Philosophy Certificate course in Philosophy Certificate course in MPSC foundation Certificate course in UPSC foundation Certificate course in Marathi Speaking Certificate Course in Journalism
+  utter_dept_geography:
+  - text: "Geography was started since the 4th and 5th century as a branch of knowledge on Global level. It is a part of human civilization. It is started in India since 11th century in the form of Astronomy. There are two main branches of geography., one of them is Physical geography and second one is Human geography.\n
+  Salient features of the Department:\n
+   Well qualified, skilled and dedicated faculty\n
+   Advanced teaching and learning resources and methods\n
+   Career guidance cell for students.\n
+   Internet Access to the students\n
+   Separate departmental library and study room.\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/geography/"
+  utter_courses_geography:
+  - buttons:
+    - payload: /dept_geography
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.A.Geography B.Sc.Geography(At S.Y. level) M.A./M. Sc.Geography Skill Development course ‘GIS’
+  utter_dept_political_science:
+  - text: "The subject of Political Science was introduced in Modern College in the year 1971. In 1978 the subject achieved the status of permanent affiliation. In the year 1976, the department had organized One-day seminar on the topic 42nd Amendment Of The Indian Constitution. A workshop on the topic  Panchayat Raj in Maharashtra was organised on 16th February 1975.\n
+  Salient Features of Department-\n
+   Well qualified and dedicated faculty.\n
+   Career guidance for students.\n
+   Dedication for enhancing overall progress of students.\n
+   Innovative style and student based teaching.\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/political-science/"
+  utter_courses_political_science:
+  - buttons:
+    - payload: /dept_political_science
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: 'First Year B.A. General Paper 1- INDIAN GOVERNMENT AND POLITICS Second year B.A (Specialization): English and Marathi medium Special Paper 1 (S1) WESTERN POLITICAL THOUGHT Special Paper 2 (S2) POLITICAL SOCIOLOGY General Paper 2 (G3) POLITICAL THEORY & CONCEPTS Third Year B.A. (Specialization) English and Marathi medium: Special Paper 3 (S3) PUBLIC ADMINISTRATION Special Paper 4 (S4) INTERNATIONAL POLITICS General Paper 3 (G3) POLITICAL IDEOLOGIES.'
+  utter_dept_commerce_self:
+  - text: "Modern College of Arts, Science and Commerce (Autonomous), Shivajinagar, Pune 05 – Self Financed Section (Commerce) was established in June 2007 for Professional courses in Computer and Business like B.Com, BBA and BCA/BBA (CA), BBA(IB), M.Com (e-Commerce), M.Com. which are affiliated to Savitribai Phule Pune University.\n
+  Salient Features of the Department-\n
+   Well qualified, skilled and dedicated faculty.\n
+   Advanced teaching and learning resources and methods.\n
+   Departmental Career guidance and placement cell for students.\n
+   Separate departmental library.\n
+  for more information click on following link- http://moderncollegepune.edu.in/academics/"
+  utter_courses_commerce_self:
+  - buttons:
+    - payload: /dept_commerce_self
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.Com BBA BBA – CA BBA -IB M.Com M.Com – E-Commerce Foreign Languages (M.Com)
+  utter_dept_commerce_grant:
+  - text: "The Department of Commerce (which is a faculty at university level) includes 8 subjects, Accountancy, Cost and Works Accounting, Business Administration, Marketing, Business Law, Business Practices, Mathematics and Statistics, Banking and Finance, Business Economics. The Department of Commerce has been a major section of Modern College of Arts Science and Commerce, Shivajinagar, Pune 5.\n
+  Salient Features of the Department-\n
+   Department since inception of the College\n
+   The Department has received permanent affiliation to SPPU for B. Com. and M. Com.\n
+   Well qualified faculty\n
+   First Department to get permanent Post -Graduate recognition\n
+   Renowned persons like Cost Accountants, Chartered Accountants, and Lawyers are faculty members of the Department.\n
+  for more information click on following link- http://moderncollegepune.edu.in/academics/"
+  utter_courses_commerce_grant:
+  - buttons:
+    - payload: /dept_commerce_grant
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: B.Com M.Com Ph.D
+  utter_dept_economics:
+  - text: "The Department of Economics was established in Modern College, Shivajinagar in the year 1970. Economics as a special subject for BA was introduced in the year 1973.Bachelor in Arts in Economics (English Medium) was introduced in 2005. Post –graduation in Economics was introduced in 2008. The department has started Ph.D Research Centre in 2012.\n
+  Salient Features of the Department-\n
+   The Department of Economics at Modern College, Shivajinagar, Pune 05, prepares students to succeed in a global business environment that is known today for the rapid pace of change.\n
+   It offers a widely recognised three-year Bachelor of Arts (BA) degree program and two year Master of Arts (MA) program that emphasises theoretical and analytical skills, and a broad- based education.\n
+   There are a variety of extracurricular activities including the elocution competition, essay competition, visits to academic and industrial units, etc. to promote student events and activities.\n
+   Workshops are conducted for Quality Enhancement and Research Improvement for more information click on following link- http://moderncollegepune.edu.in/academics/"
+  utter_courses_economics:
+  - buttons:
+    - payload: /dept_economics
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: 'Senior wing: B.A.- Special Economics B.Com – Business Economics B.Com – Banking and Finance Post Graduate wing Credit system from 2013: M.A. I and II Special Economics M.Com – Industrial Economics and Industrial Economic Environment PGDBF PostGraduate  Research Centre in Economics Ph.D. in Economics'
+  utter_dept_animation:
+  - text: "The Department of Animation is established in academic year 2019-20 as a separate department. The course run by the department is B.Sc. (Animation), which is a three year degree course started by Savitribai Phule Pune University, Pune in the academic year 2012-13. Modern College started the course in the year 2013-14. Since the first batch passed out of B.Sc. Animation, it’s a history to achieve 100% result and 100% placement till academic year 2018-19. Our students are in the field of Animation. Their entry for the course is on the basis of merit. At the undergraduate level their performance at HSC (Science) with English with any three science subjects such as Physics, Chemistry, Biology, Mathematics, Geography, biology, etc. is the criteria for the admission.The Department is planning to start M.Sc. Animation, 2 years Post Graduate Degree course from the academic year 2020-21 under Autonomous status. Co-curricular activities sharpen their minds and other skills that help in overall development. The Department organizes “Aura”, the exhibition based on the creative ideas of students in which the students exhibit their work in the form of origami, clay models, short films.We have a dedicated team of teachers, experts and well equipped laboratories. The young and highly qualified team of faculty members spare no efforts to keep the students well motivated and in updating their knowledge, creativity and skills. he students are also reciprocating by their high achievements in academic performance.\n
+  for more information click on following link- http://moderncollegepune.edu.in/department/animation/"
+  utter_courses_animation:
+  - buttons:
+    - payload: /dept_animation
+      title: Information About Department
+    - payload: /admission_form
+      title: Admission Process
+    text: Bsc Animation Msc Animation
+  utter_facilities:
+  - text: |-
+      Office
+       Library
+       Gymkhana
+       NSS
+       NCC
+       Canteen Hostel
+       Centre For Promotion of Research
+       Competitive Exam Guidance Centre
+       Digital Record Room
+  utter_fees:
+  - text: After completing the admission process and approval of clark and vice principle fees structure will be provided from respective department.
+  utter_hostel:
+  - text: |-
+      Modern College provides hostel facilities. 👍
+       http://moderncollegepune.edu.in/about/about-facilities/hostel/
+  - text: Modern College provides hostel facility for students.
+  utter_mission:
+  - text: To provide conducive and collaborative environment to meet contemporary & future Engineering challenges by project based and value-added education with the support of trained faculty.
+  - text: 'Student Success and Completion: Meeting student needs by creating an educational environment in which students can attain a variety of goals.Excellence: Maintaining a high standard of integrity and performance leading to the achievement of academic and career goals.'
+  utter_placement:
+  - text: "The Department of Computer Science has a Placement Cell and runs placement activity through a Placement Cell for Post-Graduate Students and Under-Graduate Students. Prof. Manisha Suryawanshi has been working as a Placement Coordinator and Chairperson of the Placement Committee for the placement activity under her able guidance 95% of students from the Post-Graduate Wing (M.Sc.(Computer Science), MCA) are placed in reputed organizations. All teaching and non-teaching staff members of the Department provided necessary support in smooth conduct of this activity. Graduate students are also placed in reputed software companies.\n
+  For more information regarding our placement activities and recruiters you can click on mentioned link http://moderncollegepune.edu.in/students-corner/placements/"
+  utter_address:
+  - text: Address:- Progressive Education Society's Modern College of Arts, Science and Commerce (Autonomous) Shivajinagar, Pune - 411005, Sumukh Society, Shivajinagar, Pune, Maharashtra 411005
+  utter_total_branches:
+  - buttons:
+    - payload: /branch_art
+      title: Arts
+    - payload: /branch_commerce
+      title: Commerce
+    - payload: /branch_science
+      title: Science
+    text: Modern College of Arts, Science and Commerce (Autonomous) in total has 3 branches. For detailed information you can click on the buttons
+  utter_vision:
+  - text: MCASC aspires to be a premier institute producing globally competent engineering professionals to contribute towards socio-economic growth of India.
+  utter_entrance:
+  - buttons:
+    - payload: /entrance_guide
+      title: Entrance Exam Guidance
+    - payload: /entrance_pg_query
+      title: Entance Exam Queries
+    - payload: /entrance_pg_link
+      title: Entrance Exam Link
+    text: For further notices and dates you can visit our website- http://moderncollegepune.edu.in/notices/
+  utter_HOD:
+  - text: "Information about respected HOD's and their departmemnts: - Biotechnology-Dr. Mrs. S. V. Bhagat -Botany-Dr. Mrs. N. M. Patil -Chemistry-Dr. Harsh Gaikwad -Commerce Grant-In-Aid-Dr. A.V. Kamble -Commerce Self-Financed-Dr. M. D. Alandikar -Computer Science-Prof. S. S. Deshmukh -Economics-Dr. Mrs. M. M. Satam -Electronic Science-Prof. S. R. Chaudhari -English-Prof. Mrs. A. A. Kamble -Fashion Technology-Prof. Mrs. M. N. Thakur -Geography-Dr. V. B. Kamble -German-Prof. Sneha Mahajan -Hindi-Dr. Ms. P. V. Ubale -History-Dr. R. Y. Kulkarni -Library-Dr. Shantashree Sengupta -Marathi-Dr. Mrs. N. K. Bhandare -Mathematics-Dr. A. N. Bhavale -Microbiology-Dr. Mrs. S. S. Mujumdar -Physics-Prof. S. S. Thengadi -Political Science-Prof. D.L. Khokale -Psychology-Dr. Mrs. A. S. Oke -Statistics-Prof. P. G. Dixit -Zoology-Prof. N. M. Naidu"
+  utter_library:
+  - text: 'Welcome to the Modern College of Arts, Science & Commerce Library. We try to satisfy information needs of library users at the maximum level. We are giving technology based facilities and services such as Internet facility, Web-OPAC, Reference service through online databases, e-books & e-journals, e-bulletin, online information literacy programme, using anti plagiarism software for research scholars, book issue return through barcode scanner etc. 1.Monday to Friday Regular: 8.00am to 6.00pm 2.Saturday Regular: 8.00am to 5.00pm 3.Monday to Saturday During Examinations: 8.00am to 8.00pm 4.Sunday During Examinations: 9.00am to 5.00pm 5.Competitive Exam Center (In Separate Hall) Regular: 4.00pm to 11.30pm For e-library access -Step 1: Registration for E-library (Link provided by College via Mail or WhatsApp official group) -Step 2: After Registration Email will be received for account creation. -Step3: Using OTP reset the password and create account -Step4: Acces the books after login'
+  utter_sports:
+  - text: The Sports Department witnessed a spectacular achievement in the field of sports for the academic year 2015-2016. With its all round the year emphasis on sports our students excelled at every field they participated. This year, the total number of participation was 501 of which we secured medals. Awards Intercollegiate Men’s Hockey team bags 1st place Modern College Shivajinagr receives ‘Best College Award in sports
+  utter_ragging_cell:
+  - text: 'ANTI – RAGGING COMMITTEE: I/C : Dr. Y.R. Waghmare (V.P.) Dr. Zunjarrao R.S. Principal Dr. Kulkarni N.J. Chairperson Shri More Uday Police Administrative Shri Sardar Umesh Media Person Shri Ekbote Nandkishore Local Resident Shri Athawale Sanjay NGO Smt. Jaigude Mira Parent Shri More Aniket Student'
+  utter_principals_desk:
+  - text: Modern College of Arts, Science and Commerce,(MCASC) Shivajinagar, Pune- 5 was established in 1970 by Progressive Education Society, Pune, in Maharashtra, founded in 1934. Based on the pedestal ‘ज्ञानमयोभव’ (Dnyanmayo Bhav)meaning ‘Be knowledge Incarnate’ as envisaged by the visionaries who then established the PES, Pune, the entire functioning of the college rests on two key words, ‘Modern’ and ‘Progressive’, in both letter and spirit. It enjoys the status of the first ever college to be instituted by P.E. Society, Pune and has grown from a humble beginning to a glorious destination today in its 46th year of establishment and is aiming to scale greater heights in the fields of education, research, performing arts, sports and social activities. During its initial phase of development, B.A.,B.Com.and B.Sc. degree courses were started in the college. Later during 1994, a major decision to start Post Graduate courses was initiated by the Society and was implemented successfully by the college. The college got NAAC accreditation done in 2003 and then re-accredited with ‘A’ grade in 2010.Modern College, Shivajinagar has several achievements to its credit in the from of awards, schemes, status, Grade. Efforts to inculcate discipline amongst students, establishing systematic mechanism of performance assessment of the students and teachers as well, promoting research, initiating consultancy services and patenting, arranging alumni/ industry-academia meetings, undertaking activities to conserve energy, protect environment, increase allegiance to the society at large to achieving better quality of life (QOL) are some of the hallmark features of the college.In a nut-shell this message could be summed up by taking recourse to the invaluable saying that ‘nothing is more sacred than the education’(cf. Knowledge)‘न हि ज्ञानेन सदृशं पवित्रमिह विद्यते‘is the motto, we all, as a leading education institution, try to live up to at Modern College, Shivajinagar, Pune-5. I would like to thank authorities of Progressive Education Society and each and every individual colleague for his/her valuable contribution in every achievement of the college. I express my deep sense of gratitude to the Chairman, Business Council of Progressive Education Society, Prof. Dr. G. R. Ekbote, for his valuable guidance and continuous encouragement. Prof. P. S. Chirputkar, Dr. A. K. Pande and Prof. Mrs. Jyotsna Ekbote (Chairperson, LMC) and members of LMC have always been a source of support and inspiration. I am also thankful to Prof. Shamkant Deshmukh, Secretary, Progressive Education Society, for his support and encouragement. Thanks are also due to the untiring efforts of the IQAC members, Vice-Principals, Heads of Departments, Members of the Steering Committee and all teachers for their support in our journey towards excellence. The Coordinator and the Assistant Coordinators of IQAC have played a pivotal role in propagating quality initiatives in the college and enhancing further the role of IQAC. Registrar, Office Superintendents and the administrative staff have responded very well and worked very efficiently. Dr. Rajendra S. Zunjarrao Principal
+  utter_student_welfare:
+  - text: The college has taken initiative to promote research amongst undergraduate and post graduate students under ‘Yuva Sanshodhak’ scheme by funding the projects of the students under the guidance of faculty members. The college has made the special budgetary provision for the research activity. For detailed information you can click on the mentioned link - http://moderncollegepune.edu.in/students-corner/students-welfare/
+  utter_branch_art:
+  - buttons:
+    - payload: /courses_english
+      title: English
+    - payload: /courses_hindi
+      title: Hindi
+    - payload: /courses_economics
+      title: Economics
+    - payload: /courses_geography
+      title: Geography
+    - payload: /courses_german
+      title: German
+    - payload: /courses_history
+      title: History
+    - payload: /courses_marathi
+      title: Marathi
+    - payload: /courses_political_science
+      title: Political Science
+    - payload: /courses_psychology
+      title: Psychology
+    - payload: /courses_fashion_technology
+      title: Fashion Technology
+    text: Courses offered by Arts stream
+  utter_branch_science:
+  - buttons:
+    - payload: /courses_animation
+      title: Animation
+    - payload: /courses_biotechnology
+      title: Biotechnology
+    - payload: /courses_botany
+      title: Botany
+    - payload: /courses_electronic_science
+      title: Electronic Science
+    - payload: /courses_mathematics
+      title: Mathematics
+    - payload: /courses_microbiology
+      title: Microbiology
+    - payload: /courses_physics
+      title: Physics
+    - payload: /courses_computer_science
+      title: Computer Science
+    - payload: /courses_statistics
+      title: Statistics
+    - payload: /courses_zoology
+      title: Zoology
+    - payload: /courses_chemistry
+      title: Chemistry
+    text: Courses offered by Science stream
+  utter_branch_commerce:
+  - buttons:
+    - payload: /courses_commerce_grant
+      title: Commerce Grant Aid Section
+    - payload: /courses_commerce_self
+      title: Commerce Self Financed Section
+    text: Courses offered by Commerce stream
+  utter_admission_form:
+  - buttons:
+    - payload: /ug_admission
+      title: UG admission process
+    - payload: /pg_admission
+      title: PG admission process
+    text: For more information you can click on the below buttons
+  utter_ug_admission:
+  - buttons:
+    - payload: /new_ug_student
+      title: New UG student
+    - payload: /existing_ug_student
+      title: Existing UG student
+    text: For more information you can click on the below buttons
+  utter_new_ug_student:
+  - buttons:
+    - payload: /new_ug_guidance_adm
+      title: Guidance UG admission
+    - payload: /new_ug_queries_adm
+      title: Queries UG admission
+    - payload: /new_ug_link_adm
+      title: Link UG admission
+    - payload: /new_ug_adm_cancle
+      title: Cancle UG admission
+    text: For more information you can click on the below buttons
+  utter_new_ug_queries_adm:
+  - text: We can help you in following queries
+  utter_new_ug_guidance_adm:
+  - text: 'Steps for UG admission - Instructions: - Please use google chrome or mozilla firefox browser in incognito mode for filling the form. - Step1:Enter your Name, Email id , Mobile Number and Password of your choice and click SIGN ME UP Button. - Step2:Then use the same Email address and password , entered in Step 1, to login in into the portal. - Step3:Select Merit Form / Entrance Form( for Selected UG Courses) to fill the online form. - Step4:Select Add class to fill form.You can apply for Multiple classes through same login by add class Select View Admission to view the entered data. - Step5:On successful completion of form, an application number is generated and email is sent to the registered email address. Candidates should note down this number for future reference. - Step6:Pay Admission merit form Fee. - Step7:Print the application Merit form and Fee Receipt is available after payment. - Step8:Upload the documents mentioned in the UPLOAD section. - Step9:You will receive a Shortlisted message as per merit list for further admission process. - Note:Fields identified with red color star marks are mandatory. - Note:Emails may be delivered late depending upon the rush. - Note:If you are unable to sign up / login / access your account, it means online registrations has been closed. - Note:Upload passport size photo in jpeg, jpg or png format only, otherwise it will not display on i card'
+  utter_new_ug_link_adm:
+  - text: https://oa.mograsys.com/modern/onlineadmission.html
+  utter_new_ug_adm_cancle:
+  - text: http://moderncollegepune.edu.in/notices/rules-for-the-cancellation-of-admission/
+  utter_existing_ug_student:
+  - buttons:
+    - payload: /admission_form_guide_ug
+      title: Admission guidance
+    - payload: /admission_form_query_ug
+      title: Admission Queries
+    - payload: /link_for_admission
+      title: Link for admission
+    text: For more information you can click on the below buttons
+  utter_admission_form_guide_ug:
+  - buttons:
+    - payload: /req_doc_ug
+      title: Required Documents
+    - payload: /steps_ug_admission
+      title: Steps For Admission Process
+    - payload: /eligibility_ug
+      title: Eligibility Criteria
+    text: Guidelines for admission for UG
+  utter_req_doc_ug:
+  - text: Reuired documents for UG admission (For general category) 1. SSC, HSC Marksheet 2. Leaving Certificate or Transfer Certificate 3. Aadhar Card 4. Domicile Certificate 5. Passport size photo (For reserved category) 1. SSC, HSC Marksheet 2. Leaving Certificate or Transfer Certificate 3. Aadhar Card 4. Domicile Certificate 5. Passport size photo 6. Caste certificate 7. Caste validity certificate 8. Income certificate 9. Non creamy layer certificate 10. Minority certificate For 3% QUOTA (Sports/Defence/Ex-Serviceman/Freedom Fighters/Special Ability)
+  utter_eligibility_ug:
+  - text: Eligibility for UG admission 1. Student should score atleast 60 % score in HSC exam 2. According to metrit list student will get admission in respective stream.
+  utter_steps_ug_admission:
+  - text: 'Steps for UG admission - Instructions: - Please use google chrome or mozilla firefox browser in incognito mode for filling the form. - Step1:Enter your Name, Email id , Mobile Number and Password of your choice and click SIGN ME UP Button. - Step2:Then use the same Email address and password , entered in Step 1, to login in into the portal. - Step3:Select Merit Form / Entrance Form( for Selected UG Courses) to fill the online form. - Step4:Select Add class to fill form.You can apply for Multiple classes through same login by add class Select View Admission to view the entered data. - Step5:On successful completion of form, an application number is generated and email is sent to the registered email address. Candidates should note down this number for future reference. - Step6:Pay Admission merit form Fee. - Step7:Print the application Merit form and Fee Receipt is available after payment. - Step8:Upload the documents mentioned in the UPLOAD section. - Step9:You will receive a Shortlisted message as per merit list for further admission process. - Note:Fields identified with red color star marks are mandatory. - Note:Emails may be delivered late depending upon the rush. - Note:If you are unable to sign up / login / access your account, it means online registrations has been closed. - Note:Upload passport size photo in jpeg, jpg or png format only, otherwise it will not display on i card'
+  utter_admission_form_query_ug:
+  - buttons:
+    - payload: /website_stuck
+      title: Website stuck
+    - payload: /doc_not_available
+      title: Documents not available
+    - payload: /ps_not_uploaded
+      title: Photo Sign not uploaded
+    - payload: /last_date_of_admission
+      title: Last Date Of Admission
+    - payload: /late_admission_ug
+      title: Late Admission Process
+    text: Guidelines for admission for UG
+  utter_late_admission_ug:
+  - text: For UG late admission contact department
+  utter_website_stuck:
+  - text: 'You may try following steps: - Step 1: Refresh website - OR - Step 2: Try after sometime. There is load on the website.'
+  utter_doc_not_available:
+  - text: You may submit the receipt of the application, which is valid for 6 months. But upload the original documents afterwards.
+  utter_ps_not_uploaded:
+  - text: 'Link for resizing Photo and Signature 1. PDF compressors : https://www.ilovepdf.com/ 2. Image Compressor: https://www.iloveimg.com/compress-image'
+  utter_last_date_of_admission:
+  - text: 'Last date of Admission process:'
+  utter_link_for_admission:
+  - text: https://oa.mograsys.com/modern/onlineadmission.html
+  utter_pg_admission:
+  - buttons:
+    - payload: /new_pg_student
+      title: New PG student
+    - payload: /existing_pg_student
+      title: Existing PG student
+    text: For more information you can click on the below buttons
+  utter_new_pg_student:
+  - buttons:
+    - payload: /entrance
+      title: Entrance Exam
+    text: For more information you can click on the below buttons
+  utter_entrance_guide:
+  - text: |-
+      :1 Admissions to courses will be given based on the performance in the Entrance. The fulfillment of the eligibility criteria of the course by the candidate.
+       2 The admission will be given provisionally and will be confirmed only after the Third Year Result is Autonomous College.
+       3 Students should produce genuine photo identity such as College Identity Card/Aadhar Card/ PAN Card at the time of registration and it should be made available at the time of Entrance Exam. 
+       4 Students should register by using genuine Mobile Number and Email id, same will be continued for further should upload latest passport size photograph during registration process.
+       5 FY, SY, TY, UG syllabus of concerned subject of concerned UG course, as per SPPU syllabus. eg. M.Sc. be based on FY SY TY B.Sc Botany courses as per SPPU Syllabus
+  utter_entrance_pg_query:
+  - buttons:
+    - payload: /website_stuck
+      title: Website stuck
+    - payload: /doc_not_available
+      title: Documents not available
+    - payload: /ps_not_uploaded
+      title: Photo Sign Not Uploaded
+    - payload: /entrance_pg_date
+      title: Dates
+    text: For further information click on buttons below
+  utter_entrance_pg_link:
+  - text: After declaration of UG exam results online registration form will be available. For further notice click on the link below - Link Will be upload soon
+  utter_entrance_pg_date:
+  - text: 'for entrance exam dates and result dates visit website for respective department: http://moderncollegepune.edu.in/academics/'
+  utter_existing_pg_student:
+  - buttons:
+    - payload: /admission_form_guide_pg
+      title: Admission guidance
+    - payload: /admission_form_query_pg
+      title: Admission Queries
+    - payload: /link_for_admission
+      title: Link for admission
+    text: For more information you can click on the below buttons
+  utter_admission_form_guide_pg:
+  - buttons:
+    - payload: /req_doc_pg
+      title: Required Documents
+    - payload: /steps_pg_admission
+      title: Steps For Admission Process
+    - payload: /eligibility_ug
+      title: Eligibility Criteria
+    text: Guidelines for admission for UG
+  utter_req_doc_pg:
+  - text: Reuired documents for PG admission (For general category) 1. SSC, HSC Marksheet, UG Marksheet 2. Leaving Certificate or Transfer Certificate 3. Aadhar Card 4. Domicile Certificate 5. Passport size photo (For reserved category) 1. SSC, HSC Marksheet, UG Marksheet 2. Leaving Certificate or Transfer Certificate 3. Aadhar Card 4. Domicile Certificate 5. Passport size photo 6. Caste certificate 7. Caste validity certificate 8. Income certificate 9. Non creamy layer certificate 1 0. Minority certificate For 3% QUOTA (Sports/Defence/Ex-Serviceman/Freedom Fighters/Special Ability)
+  utter_eligibility_pg:
+  - text: Eligibility for PG admission 1. Students should score atleast 70% marks in UG 2. If entrance is conducted then entrance marks will be conducted for admission.
+  utter_steps_pg_admission:
+  - text: 'Steps for PG admission - Instructions: - Please use google chrome or mozilla firefox browser in incognito mode for filling the form. - Step1:Enter your Name, Email id , Mobile Number and Password of your choice and click SIGN ME UP Button. - Step2:Then use the same Email address and password , entered in Step 1, to login in into the portal. - Step3:Select Merit Form / Entrance Form( for Selected PG Courses) to fill the online form. - Step4:Select Add class to fill form.You can apply for Multiple classes through same login by add class Select View Admission to view the entered data. - Step5:On successful completion of form, an application number is generated and email is sent to the registered email address. Candidates should note down this number for future reference. - Step6:Pay Admission merit form Fee. - Step7:Print the application Merit form and Fee Receipt is available after payment. - Step8:Upload the documents mentioned in the UPLOAD section. - Step9:You will receive a Shortlisted message as per merit list for further admission process. - Note:Fields identified with red color star marks are mandatory. - Note:Emails may be delivered late depending upon the rush. - Note:If you are unable to sign up / login / access your account, it means online registrations has been closed. - Note:Upload passport size photo in jpeg, jpg or png format only, otherwise it will not display on i card'
+  utter_admission_form_query_pg:
+  - buttons:
+    - payload: /website_stuck
+      title: Website stuck
+    - payload: /doc_not_available
+      title: Documents not available
+    - payload: /ps_not_uploaded
+      title: Photo Sign not uploaded
+    - payload: /last_date_of_admission
+      title: Last Date Of Admission
+    - payload: /late_admission_pg
+      title: Late Admission Process
+    text: We offer solution for mentioned queries
+  utter_late_admission_pg:
+  - text: For PG late admission contact deparment
+  utter_id_card:
+  - text: |-
+      -Step 1: https://modern.appsis.co.in/ppn/#/login
+      -Step 2: Upload your Photo and Signature
+      -Step 3: Fill the basic details
+  utter_ms_teams:
+  - buttons:
+    - payload: /ms_teams_login
+      title: MS_teams login
+    - payload: /ms_teams_appear_for_exam
+      title: Guidance for appearing exam
+    text: For more information you can click on the below buttons
+  utter_ms_teams_login:
+  - text: info not available
+  utter_ms_teams_appear_for_exam:
+  - text: https://www.youtube.com/watch?v=p620hfoHJgA
+  utter_scholarship_info:
+  - buttons:
+    - payload: /sch_government
+      title: Government Scholarship
+    - payload: /sch_private
+      title: Private Scholarship
+    text: For more information you can click on the below buttons
+  utter_sch_government:
+  - buttons:
+    - payload: /sch_govern_general
+      title: Scholarship for general
+    - payload: /sch_govern_obc
+      title: Scholarship for OBC
+    - payload: /sch_govern_sbc
+      title: Scholarship for SBC
+    - payload: /sch_govern_sc
+      title: Scholarship for SC
+    - payload: /sch_govern_st
+      title: Scholarship for ST
+    - payload: /sch_govern_vjnt
+      title: Scholarship for VJNT
+    text: For more information you can click on the below buttons
+  utter_sch_govern_general:
+  - buttons:
+    - payload: /sch_govern_general_I_less_1lac
+      title: Income < 1 Lakh
+    - payload: /sch_govern_general_I_more_1lac
+      title: Income > 1 Lakh
+    text: For more information you can click on the below buttons
+  utter_sch_govern_sbc:
+  - buttons:
+    - payload: /sch_govern_sbc_I_less_1.5lac
+      title: Income < 1.5 Lakh
+    - payload: /sch_govern_sbc_8lac_more_I_more_1.5lac
+      title: 8lakh > Income > 1.5 Lakh
+    text: For more information you can click on the below buttons
+  utter_sch_govern_obc:
+  - buttons:
+    - payload: /sch_govern_obc_I_less_1.5lac
+      title: Income < 1.5 Lakh
+    - payload: /sch_govern_obc_8lac_more_I_more_1.5lac
+      title: 8lakh > Income > 1.5 Lakh
+    text: For more information you can click on the below buttons
+  utter_sch_govern_sc:
+  - buttons:
+    - payload: /sch_govern_sc_I_less_2.5lac
+      title: Income < 2.5 Lakh
+    - payload: /sch_govern_sc_I_more_2.5lac
+      title: Income > 2.5 Lakh
+    text: For more information you can click on the below buttons
+  utter_sch_govern_st:
+  - buttons:
+    - payload: /sch_govern_st_I_less_2.5lac
+      title: Income < 2.5 Lakh
+    - payload: /sch_govern_st_I_more_2.5lac
+      title: Income > 2.5 Lakh
+    text: For more information you can click on the below buttons
+  utter_sch_govern_vjnt:
+  - buttons:
+    - payload: /sch_govern_vjnt_I_less_1.5lac
+      title: Income < 1.5 Lakh
+    - payload: /sch_govern_vjnt_I_more_1.5lac
+      title: Income > 1.5 Lakh
+    text: For more information you can click on the below buttons
+  utter_sch_govern_general_I_less_1lac:
+  - buttons:
+    - payload: /sch_govern_general_Rajashri_shahu
+      title: Rajarshri Chhatrapati Shahu Maharaj Merit Scholarship
+    text: For more information you can click on the below buttons
+  utter_sch_govern_general_Rajashri_shahu:
+  - text: |-
+      Step 1: For more information click on this link : https://mahadbtmahait.gov.in/
+       Step 2: Select Director Of Higher Education
+  utter_sch_govern_general_I_more_1lac:
+  - buttons:
+    - payload: /sch_govern_general_Dr_Punjabrao
+      title: Dr. Punjabrao Deshmukh Vasatigruh Nirvah Bhatta Yojna (DHE)
+    text: For more information you can click on the below buttons
+  utter_sch_govern_general_Dr_Punjabrao:
+  - text: |-
+      Step 1: For more information click on this link : https://mahadbtmahait.gov.in/
+       Step 2: Select Director Of Higher Education
+  utter_sch_govern_obc_I_less_1.5lac:
+  - buttons:
+    - payload: /sch_govern_obc_post_metric
+      title: Post-Matric Tution fee and Exam fee
+    text: For more information you can click on the below buttons
+  utter_sch_govern_obc_post_metric:
+  - text: |-
+      Step 1: For more information click on this link : https://mahadbtmahait.gov.in/
+       Step 2: Select VJNT, OBC and SBC Welfare Department
+  utter_sch_govern_obc_8lac_more_I_more_1.5lac:
+  - buttons:
+    - payload: /sch_govern_obc_tution_fee
+      title: Tution fee and exam fee for OBC
+    text: For more information you can click on the below buttons
+  utter_sch_govern_obc_tution_fee:
+  - text: ' For more information click on this link : https://mahadbtmahait.gov.in/  \n Select VJNT, OBC and SBC Welfare Department'
+  utter_sch_govern_sbc_I_less_1.5lac:
+  - buttons:
+    - payload: /sch_govern_sbc_post_metric
+      title: Post_Matric Scholarship for SBC
+    text: For more information you can click on the below buttons
+  utter_sch_govern_sbc_post_metric:
+  - text: 'For more information click on this link : https://mahadbtmahait.gov.in/  \n Select VJNT, OBC and SBC Welfare Department'
+  utter_sch_govern_sbc_8lac_more_I_more_1.5lac:
+  - buttons:
+    - payload: /sch_govern_sbc_tution_fee
+      title: Tution fee and exam fee for SBC
+    text: For more information you can click on the below buttons
+  utter_sch_govern_sbc_tution_fee:
+  - text: 'For more information click on this link : https://mahadbtmahait.gov.in/  \n Select VJNT, OBC and SBC Welfare Department'
+  utter_sch_govern_sc_I_less_2.5lac:
+  - buttons:
+    - payload: /sch_govern_sc_post_metric
+      title: Post_Matric Scholarship for SC
+    text: For more information you can click on the below buttons
+  utter_sch_govern_sc_post_metric:
+  - text: 'For more information click on this link : https://mahadbtmahait.gov.in/  \n Select VJNT, OBC and SBC Welfare Department'
+  utter_sch_govern_sc_I_more_2.5lac:
+  - buttons:
+    - payload: /sch_govern_sc_tution_fee
+      title: Tution fee and exam fee for SC
+    text: For more information you can click on the below buttons
+  utter_sch_govern_sc_tution_fee:
+  - text: 'For more information click on this link : https://mahadbtmahait.gov.in/  \n Select VJNT, OBC and SBC Welfare Department'
+  utter_sch_govern_st_I_less_2.5lac:
+  - buttons:
+    - payload: /sch_govern_st_post_metric
+      title: Post_Matric Scholarship for ST
+    text: For more information you can click on the below buttons
+  utter_sch_govern_st_post_metric:
+  - text: 'For more information click on this link : https://mahadbtmahait.gov.in/  \n Select VJNT, OBC and SBC Welfare Department'
+  utter_sch_govern_st_I_more_2.5lac:
+  - buttons:
+    - payload: /sch_govern_st_tution_fee
+      title: Tution fee and exam fee for ST
+    text: For more information you can click on the below buttons
+  utter_sch_govern_st_tution_fee:
+  - text: 'For more information click on this link : https://mahadbtmahait.gov.in/  \n Select VJNT, OBC and SBC Welfare Department'
+  utter_sch_govern_vjnt_I_less_1.5lac:
+  - buttons:
+    - payload: /sch_govern_vjnt_post_metric
+      title: Post_Matric Scholarship for VJNT
+    text: For more information you can click on the below buttons
+  utter_sch_govern_vjnt_post_metric:
+  - text: 'For more information click on this link : https://mahadbtmahait.gov.in/  \n Select VJNT, OBC and SBC Welfare Department'
+  utter_sch_govern_vjnt_8lac_more_I_more_1.5lac:
+  - buttons:
+    - payload: /sch_govern_vjnt_tution_fee
+      title: Tution fee and exam fee for VJNT
+    text: For more information you can click on the below buttons
+  utter_sch_govern_vjnt_tution_fee:
+  - text: 'For more information click on this link : https://mahadbtmahait.gov.in/  \n Select VJNT, OBC and SBC Welfare Department'
+  utter_sch_private:
+  - buttons:
+    - payload: /sch_pri_Cytel_I<1lakh
+      title: Income < 1 lakh
+    - payload: /sch_pri_emcure_pharmaceuticals_I<3lakh
+      title: Income < 3 lakh
+    - payload: /sch_pri_geeta_israni_I<4lakh
+      title: Income < 4lakh
+    - payload: /sch_pri_ashutosh_karandikar_I<5lakh
+      title: Income < 5 lakh
+    text: Our college provides private scholarship. There are multiple criteria which are considered while offering scholarships to students. We have mentioned some of below./n 1. Interviews are conducted at two stages departmental level interview & conducted by sponsor. 2. For post verification of documents & for family background check scrutiny is done./n
+  utter_sch_pri_Cytel_I<1lakh:
+  - text: |-
+      Cytle Company Name of Scholarship: Cytle 
+       This scholarship is applicable for students having family income below 1 to 2 Lakhs.
+       Eligibility Criteria: Minimum score 60% 
+       Documents Required:
+       1. Application 
+       2. Marksheet 
+       3. Income Certificate 
+       4. Bank Details
+  utter_sch_pri_emcure_pharmaceuticals_I<3lakh:
+  - text: |-
+      Emcure Pharmaceutical Pvt Ltd, Bhosari, Pune 
+       Name of Scholarship: Emcure 
+       This company provides scholarships to female students whose household income is less than Rs. 3 lakh. Females, girls with a single parent, and farmers are given preference for this scholarship.
+       Criteria for Eligibility: 70 percent minimum score Documents Required:
+       1. Application 
+       2. Marksheet 
+       3. Income Certificate 
+       4. Bank Details
+  utter_sch_pri_geeta_israni_I<4lakh:
+  - text: |-
+      Name of Scholarship: Geeta Israni 
+       This scholarship is applicable for UG students having family income below 4 to 5 Lakhs. 
+       Eligibility Criteria: Minimum score 60% 
+       Documents Required: 
+       1. Application 
+       2. Marksheet 
+       3. Income Certificate 4. Bank Details
+  utter_sch_pri_ashutosh_karandikar_I<5lakh:
+  - text: |-
+      Name of Scholarship: Ashutosh Karandikar 
+       This scholarship is applicable for students having family income below 4 to 5 Lakhs.
+       Eligibility Criteria: Minimum score 60% 
+       Documents Required:
+       1. Application 
+       2. Marksheet 
+       3. Income Certificate 
+       4. Bank Details
+  utter_examination:
+  - buttons:
+    - payload: /ug_exam
+      title: UG exam
+    - payload: /pg_exam
+      title: PG exam
+    text: For more information click the buttons below
+  utter_ug_exam:
+  - buttons:
+    - payload: /exam_form_guide_ug
+      title: Exam Form Guidance
+    - payload: /exam_form_query_ug
+      title: Exam Form Queries
+    - payload: /link_for_exam_form
+      title: Link For Exam Form
+    text: For more information click the buttons below
+  utter_exam_form_guide_ug:
+  - buttons:
+    - payload: /steps_exam_form
+      title: Steps
+    text: Exam form Guidance for UG
+  utter_exam_form_query_ug:
+  - buttons:
+    - payload: /delete_exam_form
+      title: Delete Exam Form
+    - payload: /reapply_exam_form
+      title: Reapply
+    text: Exam form Queries for UG
+  utter_pg_exam:
+  - buttons:
+    - payload: /exam_form_guide_pg
+      title: Exam Form Guidance
+    - payload: /exam_form_query_pg
+      title: Exam Form Queries
+    - payload: /link_for_exam_form
+      title: Link For Exam Form
+    text: For more information click the buttons below
+  utter_exam_form_guide_pg:
+  - buttons:
+    - payload: /steps_exam_form
+      title: Steps
+    text: Exam form Guidance for PG
+  utter_exam_form_query_pg:
+  - buttons:
+    - payload: /delete_exam_form
+      title: Delete Exam Form
+    - payload: /reapply_exam_form
+      title: Reapply
+    text: Exam form Queries for PG
+  utter_link_for_exam_form:
+  - text: Link for Exam form https://modern.appsis.co.in/ppn/#/login
+  utter_steps_exam_form:
+  - text: |-
+      Steps for Exam Form for PG Steps:
+       Step 1: Select Exam form option from the Dashboard
+       -Step 2: Select the subjects for semester
+       -Step 3: Pay Exam form Fee.
+       -Step 4: Print the application form and Fee Receipt is available after payment.
+  utter_delete_exam_form:
+  - text: To Delete Exam Exam for PG
+  utter_reapply_exam_form:
+  - text: To Reapply Exam Form for PG
+  utter_process_for_tc_lc:
+  - text: |-
+      DOCUMENTS REQUIRED FOR TC/LC :
+       SSC Marksheet
+       HSC Marksheet
+       Marksheet of FY, SY, TY
+       Last School/College Leaving Certificate
+       College Fees Challan- FY, SY, TY
+
+      Documents Required for Tranfer/ Migration Certificate/ N.O.C (ONLY FOR PG STUDENTS)
+       1. Take TC form from Counter
+       2. 10th and 12th Certificate if not any official document having birthdate proof
+       3. B.A/B.Com/B.Sc Marksheet xerox
+       4. M.A/M.Com/M.Sc Marksheet xerox
+       5. M.A/M.Com/M.Sc First year and Second year Admission fee receipt
+       6. All fee Receipt
+       7. Affidavite your TC with 100 Rs stamp if it is approved 5 years ago
+
+      Notice: All documents should be Self Attested Documents Required for Tranfer/ Migration Certificate/ N.O.C (ONLY FOR UG STUDENTS)
+       1. Take TC form from Counter
+       2. 10th Board Certificate or LC
+       3. 12th Standard LC
+       4. Xerox of HSC Marksheet, FY Marksheet, SY Marksheet, TY Marksheet
+       4. All fee Receipt Notice All documents should be Self Attested
+  utter_awards:
+  - text: |
+      Best Innovative Teacher Award by SPPU, 2022
+       ARIIA Band Beginner Ranking, MoE, Govt of India, 2021
+       Best College Award (NSS) by SPPU, 2021
+       Best NSS Officer Award by SPPU, 2021
+       Best College Award by SPPU, 2021
+       Best College Award (Sports) by SPPU (2021)
+       Best Teacher Award by SPPU (2021)
+       Best Non-teaching Staff Award by SPPU (2021)
+       Unnat Bharat Scheme, 2021
+       Award as Mentor Institution under ‘Paramarsh’ Scheme by UGC (2019)
+       B. Voc. Scheme by UGC for 2 Programs (2019)
+       M.Voc. Scheme by UGC (2019)
+       Autonomous Status by UGC (2019)
+       Best College award (Sports) by SPPU (2019)
+       DST-FIST Schemes (2018)
+       Best Accessible Website by Ministry of Social Justice and Empowerment (2018)
+       B. Voc. (Fashion Technology and Apparel Designing) (2018)
+       Best College award (Sports) by SPPU (2018)
+       B.Voc. Scheme by UGC, (2018)
+       ‘A+’ Grade with CGPA 3.51 by NAAC (2017)
+       CPE status by UGC New  Delhi ( 2017) 
+       Best College award (Sports) by SPPU (2017)
+       Best College award (Sports) by SPPU (2016) 
+       Community College Scheme by UGC (2015)
+       ISO 9001:2008 Certification (2015)
+       Best Principal award by SPPU (2014)
+       Best College award (NSS) by SPPU (2014)
+       DST-FIST Schemes (2013)
+       Star College Scheme by DBT, Govt. of India (2013)
+       UGC-BSR Scheme (2012)
+       CPE status  by UGC New Delhi (2011)
+       ‘A’ Grade with 3.15 CGPA by NAAC (2010)
+       Best College Award by SPPU (2008)
+  utter_adm_junior:
+  - buttons:
+    - payload: /adm_junior_11
+      title: 11th Admission
+    - payload: /adm_junior_12
+      title: 12th Admission
+    text: For more information click on button below
+  utter_adm_junior_11:
+  - buttons:
+    - payload: /junior_11_notice
+      title: Notice
+    - payload: /junior_11_dou_req
+      title: Required Documents 11th Admission
+    text: For more information click on button below
+  utter_junior_11_notice:
+  - text: 'Updated notices regarding 11th Admission: http://moderncollegepune.edu.in/notices/'
+  utter_junior_11_dou_req:
+  - text: |-
+      कागदपत्रे सेट क्रं. १
+
+      १. परिपुर्ण भरलेला अॅडमिशन फॉर्म. (फॉर्मवर डाव्या कोप-यात आपला रोल नं आणि डिव्हीजन लिहीणे आवश्यक)
+       २. इ. १० वी गुणपत्रिका छायांकित प्रत
+       ३. शाळा सोडल्याच्या दाखल्याची छायांकित प्रत
+       ४. जातीच्या दाखल्याची छायांकित प्रत (लागू असल्यास)
+       ५. नॉन क्रिमिलेअर प्रमाणपत्र छायांकित प्रत. (लागू असल्यास)
+       ६. आधारकार्ड छायांकित प्रत.
+       ७. केद्रिय प्रवेश प्रक्रियेचे अॅडमिशन पत्र. (Centralised Admission Letter)
+       ८. इ. ११ वी प्रवेश फि चलनाची छायांकित प्रत 
+
+      कागदपत्रे सेट क्रं. २
+      १. शाळा सोडल्याचा मुळ दाखला. नं (Orignal Leaving Certificate) (दाखल्यावर डाव्या कोप-यात आपला रोल नं आणि डिव्हीजन पेन्सिलने लिहीणे आवश्यक) प्रत
+       २. केद्रिय प्रवेश प्रक्रियेचे अॅडमिशन पत्र.(Centralised Admission Letter)
+       ३. शाळा सोडल्याच्या दाखल्याची छायांकित प्रत
+       ४. इ. १० वी गुणपत्रिका छायांकित प्रत
+       ५. जातीच्या दाखल्याची छायांकित प्रत (लागू असल्यास)
+       ६. नॉन क्रिमिलेअर प्रमाणपत्र छायांकित प्रत.(लागू असल्यास)
+       ७. आधारकार्ड छायांकित प्रत.
+  utter_adm_junior_12:
+  - buttons:
+    - payload: /steps_adm_12
+      title: Steps for 12th Admission
+    text: For more information click on the button below
+  utter_steps_adm_12:
+  - text: Steps 1. In any browser type https://modernjr.appsis.co.in/ppn 2.Enter your Enrollment number and password. 3. Click on Fees Payment option on your portal to pay the fees. Your admission process will be completed after payment of fees.
+actions: []
+forms: {}
+e2e_actions: []
